@@ -16,7 +16,7 @@
 
   const products = [
     {
-      slug: 'reclaim-workbook', title: 'The RECLAIM™ Workbook', family: 'RECLAIM™', kind: 'Adult resource',
+      slug: 'reclaim-workbook', price: 28.00, title: 'The RECLAIM™ Workbook', family: 'RECLAIM™', kind: 'Adult resource',
       description: 'A self-guided workbook combining clinical insight with gentle, structured reflection. Across six chapters, it guides readers to map protective adaptations, explore internalised shame, clarify healthy boundaries and take steady steps toward a life of thriving.',
       format: 'Premium spiral-bound physical edition + instant PDF download; digital edition and printable journal included.',
       audience: 'Adults working through childhood trauma, people-pleasing and survival patterns.',
@@ -25,7 +25,7 @@
       notice: 'Self-guided material is not a substitute for individual psychotherapy or crisis support. It should not invite intensive trauma processing without appropriate clinical support.'
     },
     {
-      slug: 'reclaim-guided-programme', title: 'RECLAIM™ Guided 8-Week Programme', family: 'RECLAIM™', kind: 'Guided cohort',
+      slug: 'reclaim-guided-programme', price: 495.00, title: 'RECLAIM™ Guided 8-Week Programme', family: 'RECLAIM™', kind: 'Guided cohort',
       description: 'A structured group cohort with live mentor facilitation. Participants move through RECLAIM™ in a held group setting with weekly video teaching, workbook integration calls and a secure private reflection space.',
       format: 'Eight-week live online cohort + resource portal; weekly live Zoom integration sessions (60 minutes).',
       audience: 'Adults seeking structured community support and guided step-by-step accountability.',
@@ -34,7 +34,7 @@
       notice: 'Participants should be in a stable emotional position. The current product page recommends 1:1 clinical therapy first for anyone experiencing acute crisis.'
     },
     {
-      slug: 'reclaim-1on1-intensive', title: 'RECLAIM™ 1:1 Private Mentorship', family: 'RECLAIM™', kind: 'Individual pathway',
+      slug: 'reclaim-1on1-intensive', price: 1850.00, title: 'RECLAIM™ 1:1 Private Mentorship', family: 'RECLAIM™', kind: 'Individual pathway',
       description: 'A deeply personalised 1:1 pathway combining the RECLAIM™ methodology with coaching sessions directly with Nicola. Over twelve weeks, each stage is tailored to the client’s life history, relational patterns and future aspirations.',
       format: 'Twelve-week private 1:1 virtual mentorship.',
       audience: 'Individuals seeking bespoke, confidential guidance through the RECLAIM™ framework.',
@@ -43,7 +43,7 @@
       notice: 'The source copy says suitability and the distinction between coaching and therapy should be made clear at assessment.'
     },
     {
-      slug: 'my-big-feelings', title: 'My Big Feelings', family: 'Lemmy Lou & Friends', kind: 'Activity workbook',
+      slug: 'my-big-feelings', price: 12.99, title: 'My Big Feelings', family: 'Lemmy Lou & Friends', kind: 'Activity workbook',
       description: 'A colourful activity workbook designed to help children recognise, name and explore emotions in a safe, playful and engaging way.',
       format: 'Printed full-colour paperback; digital download also available.',
       audience: 'Ages 4–10; parents, teachers, pastoral teams and child therapists.',
@@ -51,7 +51,7 @@
       external: '/product/my-big-feelings', image: '/assets/lemmy/my-big-feelings.webp', color: 'pink'
     },
     {
-      slug: 'calm-with-me', title: 'Calm With Me', family: 'Lemmy Lou & Friends', kind: 'Activity workbook',
+      slug: 'calm-with-me', price: 12.99, title: 'Calm With Me', family: 'Lemmy Lou & Friends', kind: 'Activity workbook',
       description: 'Lemmy Lou and friends practise belly breathing, sensory grounding, muscle-relaxation games and gentle mindful movement. Designed for home routines, classroom calm corners or paediatric therapy settings.',
       format: 'Printed full-colour paperback; printable edition available.',
       audience: 'Children dealing with worry, anxiety, bedtime restlessness or sensory overwhelm.',
@@ -59,7 +59,7 @@
       external: '/product/calm-with-me', image: '/assets/lemmy/calm-with-me.webp', color: 'blue'
     },
     {
-      slug: 'i-am-amazing', title: 'I Am Amazing', family: 'Lemmy Lou & Friends', kind: 'Activity workbook',
+      slug: 'i-am-amazing', price: 12.99, title: 'I Am Amazing', family: 'Lemmy Lou & Friends', kind: 'Activity workbook',
       description: 'A confidence-building workbook in which Lemmy Lou and friends show that being kind, creative, thoughtful or different is something to celebrate.',
       format: 'Printed full-colour paperback.',
       audience: 'Children building self-esteem, confidence and resilience.',
@@ -67,7 +67,7 @@
       external: '/product/i-am-amazing', image: '/assets/lemmy/i-am-amazing.webp', color: 'green'
     },
     {
-      slug: 'worry-cloud-storybook', title: 'Lemmy Lou and the Worry Cloud', family: 'Lemmy Lou & Friends', kind: 'Storybook',
+      slug: 'worry-cloud-storybook', price: 8.99, title: 'Lemmy Lou and the Worry Cloud', family: 'Lemmy Lou & Friends', kind: 'Storybook',
       description: 'One morning, Lemmy Lou finds a fluffy grey cloud above her head; it grows when she keeps her worries inside. She discovers that sharing her thoughts with trusted friends and adults can help the cloud shrink into sunshine.',
       format: 'Hardcover and paperback picture book.',
       audience: 'Children ages 3–8 experiencing worries or situational anxiety.',
@@ -75,7 +75,7 @@
       external: '/product/worry-cloud-storybook', image: '/assets/lemmy/worry-cloud.webp', color: 'sky'
     },
     {
-      slug: 'strong-little-no', title: 'Layth and the Strong Little No', family: 'Lemmy Lou & Friends', kind: 'Storybook',
+      slug: 'strong-little-no', price: 8.99, title: 'Layth and the Strong Little No', family: 'Lemmy Lou & Friends', kind: 'Storybook',
       description: 'Layth loves helping everyone, but sometimes says yes when his tummy feels like saying no. He learns that a respectful “no” can protect his peace, keep him safe and still be kind.',
       format: 'Hardcover and paperback picture book.',
       audience: 'Children learning about personal boundaries, consent and healthy assertiveness.',
@@ -83,7 +83,7 @@
       external: '/product/strong-little-no', image: '/assets/lemmy/strong-little-no.webp', color: 'mint'
     },
     {
-      slug: 'affirmation-colouring-book', title: 'My Affirmation Colouring Book', family: 'Lemmy Lou & Friends', kind: 'Colouring book',
+      slug: 'affirmation-colouring-book', price: 6.50, title: 'My Affirmation Colouring Book', family: 'Lemmy Lou & Friends', kind: 'Colouring book',
       description: 'Combines mindful colouring with affirming words such as “I Am Kind”, “I Am Brave”, “It Is Okay To Cry” and “My Feelings Matter”.',
       format: 'Paperback colouring book + printable PDF download.',
       audience: 'Ages 3–11; mindful calming sessions, home and classroom.',
@@ -111,7 +111,8 @@
     '/contact/': ['Contact | Nicola Benyahia', 'Choose a pathway and continue to the current contact destination.'],
     '/discovery-call/': ['Discovery Call | Nicola Benyahia', 'Information about the current discovery-call route and how to continue there.'],
     '/faq/': ['Frequently Asked Questions | Nicola Benyahia', 'Answers based on the supplied site copy about Therapy, RECLAIM™, Coaching and resources.'],
-    '/cart/': ['Shopping Bag | Nicola Benyahia', 'Continue to the existing shop for shopping-bag and order handling.']
+    '/cart/': ['Shopping Bag | Nicola Benyahia', 'Review your selected Nicola Benyahia resources before checkout.'],
+    '/checkout/': ['Checkout | Nicola Benyahia', 'Review your order and prepare it for a future payment integration.']
   };
 
   function normalizePath(path) {
@@ -163,9 +164,9 @@
           <p class="footer-quote">“Your past shaped you. It doesn’t have to define what comes next.”</p>
         </div>
         <div class="footer-links"><h2>Explore</h2><div>${local('/about/', 'About Nicola')}${local('/therapy/', 'Therapy & EMDR')}${local('/reclaim/', 'RECLAIM™')}${local('/coaching/', 'Coaching')}${local('/resources/', 'Resources')}${local('/lemmy-lou-and-friends/', 'Lemmy Lou & Friends')}${local('/faq/', 'FAQs')}${local('/contact/', 'Contact')}</div></div>
-        <div class="footer-links"><h2>Current destinations</h2><div>${external(live('/discovery-call'), 'Discovery Call')}${external(live('/cart'), 'Shopping bag')}${external(live('/privacy'), 'Privacy Policy')}${external(live('/terms'), 'Terms & Conditions')}${external(live('/cookies'), 'Cookie Policy')}${external(live('/booking-policy'), 'Booking Policy')}${external(live('/refund-policy'), 'Refund Policy')}</div></div>
+        <div class="footer-links"><h2>Current destinations</h2><div>${external(live('/discovery-call'), 'Discovery Call')}${local('/cart/', 'Shopping bag')}${external(live('/privacy'), 'Privacy Policy')}${external(live('/terms'), 'Terms & Conditions')}${external(live('/cookies'), 'Cookie Policy')}${external(live('/booking-policy'), 'Booking Policy')}${external(live('/refund-policy'), 'Refund Policy')}</div></div>
       </div>
-      <div class="container footer-bottom"><span>© Nicola Benyahia</span><span>Preview links to current booking, shop and policy pages; no forms or checkout are simulated here.</span></div>
+      <div class="container footer-bottom"><span>© Nicola Benyahia</span><span>Frontend preview: cart and checkout are ready for a verified provider integration.</span></div>
     </footer>`;
   }
 
@@ -230,7 +231,7 @@
   function productCard(product, compact = false) {
     return `<article class="product-card product-card--${product.color} ${compact ? 'product-card--compact' : ''}">
       ${product.image ? `<a class="product-card__image" href="/product/${product.slug}/" aria-label="Read about ${product.title}">${image(product.image, `${product.title} cover`, '', 'lazy')}</a>` : `<div class="product-card__letter" aria-hidden="true">${product.family === 'RECLAIM™' ? 'R' : 'N'}</div>`}
-      <div class="product-card__body">${eyebrow(product.kind)}<h3>${local(`/product/${product.slug}/`, product.title)}</h3><p>${product.description}</p>${local(`/product/${product.slug}/`, 'Explore this resource <span aria-hidden="true">→</span>', 'text-link')}</div>
+      <div class="product-card__body">${eyebrow(product.kind)}<h3>${local(`/product/${product.slug}/`, product.title)}</h3><p>${product.description}</p>${local(`/product/${product.slug}/`, 'Explore this resource <span aria-hidden="true">→</span>', 'text-link')}<button class="text-link product-card__add" type="button" data-add-to-cart="${product.slug}">Add to cart <span aria-hidden="true">+</span></button></div>
     </article>`;
   }
 
@@ -299,14 +300,14 @@
 
   function productPage(product) {
     const related = products.filter(p => p.family === product.family && p.slug !== product.slug).slice(0,3);
+    const price = Number(product.price || 0).toFixed(2);
     return `<main id="main-content" class="page page-product page-product--${product.color}">
-      <section class="product-hero"><div class="container product-hero__grid">${product.image ? `<figure class="product-hero__cover">${image(product.image, `${product.title} cover`, '', 'eager')}<figcaption>${product.family === 'Lemmy Lou & Friends' ? 'Original supplied cover' : ''}</figcaption></figure>` : `<div class="product-hero__symbol" aria-hidden="true">${product.family==='RECLAIM™'?'R':'N'}</div>`}<div class="product-hero__copy">${eyebrow(`${product.family} · ${product.kind}`)}<h1>${product.title}</h1><p class="hero-lede">${product.description}</p><p class="product-format">${product.format}</p><p class="product-audience"><strong>Intended audience:</strong> ${product.audience}</p>${external(live(product.external), 'View the current product page <span aria-hidden="true">↗</span>', 'button button--primary')}<p class="external-note">Product details and availability are handled on the existing site. This preview does not add items to a cart or process orders.</p></div></div></section>
+      <section class="product-hero"><div class="container product-hero__grid">${product.image ? `<figure class="product-hero__cover">${image(product.image, `${product.title} cover`, '', 'eager')}<figcaption>Original supplied cover</figcaption></figure>` : `<div class="product-hero__symbol" aria-hidden="true">${product.family==='RECLAIM™'?'R':'N'}</div>`}<div class="product-hero__copy">${eyebrow(`${product.family} · ${product.kind}`)}<h1>${product.title}</h1><p class="hero-lede">${product.description}</p><p class="product-format">${product.format}</p><p class="product-audience"><strong>Intended audience:</strong> ${product.audience}</p><div class="product-purchase"><span class="product-price">£${price}</span><label class="quantity-control">Quantity <input type="number" min="1" max="99" value="1" data-product-quantity="${product.slug}" aria-label="Quantity for ${product.title}"></label><button class="button button--primary" type="button" data-add-to-cart="${product.slug}">Add to cart <span class="button-arrow" aria-hidden="true">→</span></button></div><p class="cart-status" data-cart-status="${product.slug}" role="status" aria-live="polite"></p><p class="external-note">The listed price is provided for this frontend preview. No payment is taken here; a verified provider can be connected at checkout.</p></div></div></section>
       <section class="section-pad"><div class="container product-detail-grid"><div>${eyebrow('AT A GLANCE')}<h2>What this resource explores</h2></div><ul class="product-feature-list">${product.features.map((item,i)=>`<li><span>${String(i+1).padStart(2,'0')}</span><p>${item}</p></li>`).join('')}</ul></div></section>
       ${product.notice ? `<section class="clinical-note clinical-note--product section-pad"><div class="container clinical-note__inner"><span class="clinical-note__mark" aria-hidden="true">!</span><div>${eyebrow('IMPORTANT NOTE')}<h2>Use with appropriate support.</h2><p>${product.notice}</p>${local('/therapy/', 'Read about Therapy & EMDR <span aria-hidden="true">→</span>', 'text-link')}</div></div></section>` : ''}
       ${related.length ? `<section class="section-pad related-products"><div class="container">${intro('MORE FROM THIS COLLECTION', 'Continue exploring', '')}<div class="product-grid product-grid--related">${related.map(p=>productCard(p,true)).join('')}</div>${local(product.family==='RECLAIM™'?'/reclaim/':'/lemmy-lou-and-friends/', 'Return to the collection <span aria-hidden="true">→</span>', 'text-link')}</div></section>`:''}
     </main>`;
   }
-
   function faqPage() {
     const items = [
       ['What is the difference between Therapy, RECLAIM™ and Coaching?', 'Therapy is clinical, trauma-informed counselling and may include EMDR where appropriate. RECLAIM™ is a structured adult recovery pathway focused on understanding survival patterns, reconnecting with identity and strengthening boundaries. Coaching is forward-focused around confidence, direction, transitions and aligned action.'],
@@ -319,17 +320,18 @@
   }
 
   function contactPage() {
-    return `<main id="main-content" class="page page-contact"><section class="page-intro page-intro--peach"><div class="container page-intro__inner">${eyebrow('CONTACT & NEXT STEPS')}<h1>You don’t have to stay<br><em>where you are.</em></h1><p class="hero-lede">Whether you are looking for therapy, ready to explore RECLAIM™, want coaching to help you move forward or are browsing the resources, start with the pathway that best fits where you are now.</p></div></section><section class="section-pad"><div class="container contact-grid">${pathwayCard('01','Clinical support','Therapy & EMDR','Trauma-informed counselling for adults seeking therapeutic support.','/therapy/','therapy')}${pathwayCard('02','Structured recovery','RECLAIM™','A six-stage pathway from understanding survival patterns to creating what comes next.','/reclaim/','reclaim')}${pathwayCard('03','Forward-focused','Coaching','Reflective, practical work around confidence, purpose, boundaries and action.','/coaching/','coaching')}</div></section><section class="contact-destination section-pad"><div class="container contact-destination__inner"><div>${eyebrow('CURRENT CONTACT DESTINATION')}<h2>Continue to the existing practice page.</h2><p>This static preview does not collect or send messages. Use the current Contact page for enquiries.</p></div>${external(live('/contact'), 'Open the current Contact page <span aria-hidden="true">↗</span>', 'button button--dark')}</div></section></main>`;
+    return `<main id="main-content" class="page page-contact"><section class="page-intro page-intro--peach"><div class="container page-intro__inner">${eyebrow('CONTACT & NEXT STEPS')}<h1>Let’s find the right<br><em>next step.</em></h1><p class="hero-lede">If you are deciding between therapy, RECLAIM™ and coaching, you can use the pathways below to orient yourself, or send a prepared enquiry through this frontend-only form.</p></div></section><section class="section-pad"><div class="container contact-layout"><div class="contact-copy">${eyebrow('A WARM PLACE TO BEGIN')}<h2>You do not need to have the perfect words.</h2><p>Share what you are hoping for and which kind of support you are considering. This preview does not send messages or store submissions; the form is a clear interface ready to connect to a verified endpoint later.</p><div class="contact-pathways">${pathwayCard('01','Clinical support','Therapy & EMDR','Trauma-informed counselling for adults seeking therapeutic support.','/therapy/','therapy')}${pathwayCard('02','Structured recovery','RECLAIM™','A six-stage pathway from understanding survival patterns to creating what comes next.','/reclaim/','reclaim')}${pathwayCard('03','Forward-focused','Coaching','Reflective, practical work around confidence, purpose, boundaries and action.','/coaching/','coaching')}</div></div><form class="contact-form" data-contact-form><div>${eyebrow('ENQUIRY FORM')}<h2>Tell me a little about what brings you here.</h2></div><label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" required><label for="contact-email">Email address</label><input id="contact-email" name="email" type="email" autocomplete="email" required><label for="contact-pathway">Pathway</label><select id="contact-pathway" name="pathway"><option>Therapy & EMDR</option><option>RECLAIM™</option><option>Coaching</option><option>Resources</option><option>Not sure yet</option></select><label for="contact-message">How can I help?</label><textarea id="contact-message" name="message" rows="6" required></textarea><button class="button button--primary" type="submit">Prepare enquiry <span class="button-arrow" aria-hidden="true">→</span></button><p class="form-note">No message will be sent from this static preview.</p><p class="form-status" data-form-status role="status" aria-live="polite"></p></form></div></section><section class="contact-destination section-pad"><div class="container contact-destination__inner"><div>${eyebrow('DISCOVERY CALL')}<h2>Prefer to talk it through?</h2><p>The verified Discovery Call destination is available for questions about suitability and the best way to work together.</p></div><div class="closing-cta__actions">${local('/discovery-call/', 'Explore the Discovery Call <span aria-hidden="true">→</span>', 'button button--dark')}${external(live('/contact'), 'Open the current Contact page <span aria-hidden="true">↗</span>', 'text-link')}</div></div></section></main>`;
   }
-
   function discoveryPage() {
     return `<main id="main-content" class="page page-discovery"><section class="page-intro page-intro--peach"><div class="container page-intro__inner">${eyebrow('A FIRST CONVERSATION')}<h1>Start with a<br><em>Discovery Call.</em></h1><p class="hero-lede">The current site describes a confidential 20-minute consultation to discuss your needs and identify a suitable pathway.</p></div></section><section class="section-pad"><div class="container discovery-grid"><div><h2>Choose the pathway you want to discuss.</h2><ul class="simple-list"><li>Trauma-informed Therapy & EMDR</li><li>The RECLAIM™ adult pathway</li><li>Forward-focused Coaching</li><li>Psychological resources for adults, children and families</li></ul></div><aside class="discovery-card"><span class="note-index">20</span><p class="discovery-card__label">MINUTES · CONFIDENTIAL</p><h3>Continue on the existing site.</h3><p>This preview has no scheduler or booking form. The button opens Nicola’s current Discovery Call destination.</p>${external(live('/discovery-call'), 'Open the current Discovery Call page <span aria-hidden="true">↗</span>', 'button button--primary')}${local('/contact/', 'See contact options', 'text-link')}</aside></div></section></main>`;
   }
 
   function cartPage() {
-    return `<main id="main-content" class="page page-cart"><section class="page-intro"><div class="container page-intro__inner">${eyebrow('SHOPPING BAG & ORDERS')}<h1>Continue to the<br><em>existing shop.</em></h1><p class="hero-lede">Shopping-bag, checkout and order handling remain with the current store.</p></div></section><section class="section-pad"><div class="container cart-notice"><div class="cart-notice__symbol" aria-hidden="true">—</div><div><h2>No cart is simulated in this preview.</h2><p>This static site does not store cart contents, accept payment or submit an order. Use the verified current destination for shopping-bag and order functionality.</p>${external(live('/cart'), 'Open the current shopping bag <span aria-hidden="true">↗</span>', 'button button--dark')}${local('/resources/', 'Return to resources', 'text-link')}</div></div></section></main>`;
+    return `<main id="main-content" class="page page-cart"><section class="page-intro"><div class="container page-intro__inner">${eyebrow('SHOPPING BAG & ORDERS')}<h1>Your selected<br><em>resources.</em></h1><p class="hero-lede">Review quantities before moving to the checkout preparation screen. Your bag is stored locally in this browser.</p></div></section><section class="section-pad"><div class="container cart-shell" data-cart-root><div class="cart-items" data-cart-items></div><aside class="cart-summary" data-cart-summary></aside></div></section></main>`;
   }
-
+  function checkoutPage() {
+    return `<main id="main-content" class="page page-checkout"><section class="page-intro page-intro--peach"><div class="container page-intro__inner">${eyebrow('CHECKOUT PREPARATION')}<h1>Almost ready<br><em>to place your order.</em></h1><p class="hero-lede">Confirm your details and review the order. Payment is intentionally not collected in this static preview.</p></div></section><section class="section-pad"><div class="container checkout-layout"><form class="checkout-form" data-checkout-form><div>${eyebrow('CUSTOMER DETAILS')}<h2>Where should we send your order?</h2></div><label for="checkout-name">Full name</label><input id="checkout-name" name="name" autocomplete="name" required><label for="checkout-email">Email address</label><input id="checkout-email" name="email" type="email" autocomplete="email" required><label for="checkout-address">Billing or delivery address</label><textarea id="checkout-address" name="address" rows="4" autocomplete="street-address" required></textarea><div class="payment-placeholder"><span class="eyebrow">PAYMENT INTEGRATION POINT</span><p>No card fields are collected here. Connect a verified payment provider to this step before accepting orders.</p></div><button class="button button--dark" type="submit">Prepare order <span class="button-arrow" aria-hidden="true">→</span></button><p class="form-note">This action will not charge you or create an order.</p><p class="form-status" data-checkout-status role="status" aria-live="polite"></p></form><aside class="checkout-summary" data-checkout-summary></aside></div></section></main>`;
+  }
   function policyPage(key) {
     const [title, path] = policyPages[key];
     return `<main id="main-content" class="page page-policy"><section class="page-intro"><div class="container page-intro__inner">${eyebrow('CURRENT PRACTICE POLICY')}<h1>${title}</h1><p class="hero-lede">The existing practice website maintains the current policy text. This preview links there rather than reproducing or revising legal wording.</p></div></section><section class="section-pad"><div class="container policy-notice"><p>For the latest version and full policy wording, open the official page on the current practice website.</p>${external(live(path), `Read the current ${title} <span aria-hidden="true">↗</span>`, 'button button--dark')}<p class="small-note">The static preview contains no replacement legal terms or policy text.</p></div></section></main>`;
@@ -338,6 +340,17 @@
   function notFoundPage() {
     return `<main id="main-content" class="page page-not-found"><section class="page-intro"><div class="container page-intro__inner">${eyebrow('PAGE NOT FOUND')}<h1>This path doesn’t<br><em>lead anywhere here.</em></h1><p class="hero-lede">Try one of the main pages, or return to the home page.</p>${local('/', 'Return home <span aria-hidden="true">→</span>', 'button button--primary')}</div></section></main>`;
   }
+
+  const CART_KEY = 'nicola-benyahia-cart';
+  function readCart() { try { const value = JSON.parse(localStorage.getItem(CART_KEY) || '[]'); return Array.isArray(value) ? value : []; } catch (error) { return []; } }
+  function writeCart(items) { localStorage.setItem(CART_KEY, JSON.stringify(items)); }
+  function money(value) { return `£${Number(value).toFixed(2)}`; }
+  function cartItems() { return readCart().map(item => ({ ...item, product: products.find(p => p.slug === item.slug) })).filter(item => item.product); }
+  function cartTotal(items) { return items.reduce((sum, item) => sum + Number(item.product.price || 0) * item.quantity, 0); }
+  function addProduct(slug, quantity = 1) { const items = readCart(); const existing = items.find(item => item.slug === slug); if (existing) existing.quantity = Math.min(99, existing.quantity + quantity); else items.push({ slug, quantity }); writeCart(items); }
+  function renderCartSummary(items, target, checkout = false) { const total = cartTotal(items); target.innerHTML = `<div class="cart-summary__inner"><span class="eyebrow">ORDER SUMMARY</span><h2>${checkout ? 'Your order' : 'Subtotal'}</h2><div class="summary-lines">${items.map(item => `<div><span>${item.product.title} × ${item.quantity}</span><strong>${money(item.product.price * item.quantity)}</strong></div>`).join('')}</div><div class="summary-total"><span>Total</span><strong>${money(total)}</strong></div>${checkout ? '' : `<a class="button button--dark" href="/checkout/">Proceed to checkout <span class="button-arrow" aria-hidden="true">→</span></a>`}</div>`; }
+  function renderCart() { const items = cartItems(); const list = document.querySelector('[data-cart-items]'); const summary = document.querySelector('[data-cart-summary]'); if (!list || !summary) return; if (!items.length) { list.innerHTML = `<div class="empty-cart"><h2>Your bag is waiting.</h2><p>Choose a resource to add it here. Your selections will remain in this browser after a refresh.</p><a class="button button--primary" href="/resources/">Continue shopping <span class="button-arrow" aria-hidden="true">→</span></a></div>`; summary.innerHTML = ''; return; } list.innerHTML = items.map(item => `<article class="cart-item"><div class="cart-item__symbol ${item.product.image ? 'has-image' : ''}">${item.product.image ? image(item.product.image, `${item.product.title} cover`, '') : item.product.family === 'RECLAIM™' ? 'R' : 'N'}</div><div class="cart-item__info"><h2><a href="/product/${item.product.slug}/">${item.product.title}</a></h2><p>${item.product.kind} · ${money(item.product.price)} each</p><div class="cart-item__controls"><label>Quantity <input type="number" min="1" max="99" value="${item.quantity}" data-cart-quantity="${item.slug}"></label><button class="text-button" type="button" data-remove-cart="${item.slug}">Remove</button></div></div><strong class="cart-item__line-total">${money(item.product.price * item.quantity)}</strong></article>`).join(''); renderCartSummary(items, summary); }
+  function bindDynamicInteractions() { document.querySelectorAll('[data-add-to-cart]').forEach(buttonEl => buttonEl.addEventListener('click', () => { const slug = buttonEl.dataset.addToCart; const quantityInput = document.querySelector(`[data-product-quantity="${slug}"]`); addProduct(slug, Math.max(1, Number(quantityInput?.value || 1))); const status = document.querySelector(`[data-cart-status="${slug}"]`); if (status) status.textContent = 'Added to your bag. You can continue browsing or open the cart.'; })); document.querySelectorAll('[data-cart-quantity]').forEach(input => input.addEventListener('change', () => { const items = readCart(); const item = items.find(x => x.slug === input.dataset.cartQuantity); if (item) item.quantity = Math.max(1, Math.min(99, Number(input.value || 1))); writeCart(items); renderCart(); bindDynamicInteractions(); })); document.querySelectorAll('[data-remove-cart]').forEach(buttonEl => buttonEl.addEventListener('click', () => { writeCart(readCart().filter(item => item.slug !== buttonEl.dataset.removeCart)); renderCart(); })); const contact = document.querySelector('[data-contact-form]'); if (contact) contact.addEventListener('submit', event => { event.preventDefault(); contact.querySelector('[data-form-status]').textContent = 'Your details are ready, but nothing was sent. Connect a verified contact endpoint to enable submission.'; }); const checkout = document.querySelector('[data-checkout-form]'); if (checkout) checkout.addEventListener('submit', event => { event.preventDefault(); checkout.querySelector('[data-checkout-status]').textContent = 'No order was created. Connect a verified payment provider to complete checkout.'; }); }
 
   function renderPage() {
     if (currentPath === '/') return homePage();
@@ -351,6 +364,7 @@
     if (currentPath === '/discovery-call/') return discoveryPage();
     if (currentPath === '/faq/') return faqPage();
     if (currentPath === '/cart/') return cartPage();
+    if (currentPath === '/checkout/') return checkoutPage();
     const productMatch = currentPath.match(/^\/product\/([^/]+)\/$/);
     if (productMatch) {
       const product = products.find(p => p.slug === productMatch[1]);
@@ -373,6 +387,10 @@
 
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
+  if (currentPath === '/cart/') renderCart();
+  const checkoutSummary = document.querySelector('[data-checkout-summary]');
+  if (checkoutSummary) { const items = cartItems(); if (!items.length) checkoutSummary.innerHTML = `<div class="empty-cart"><h2>Your bag is empty.</h2><p>Return to resources to choose something before checkout.</p><a class="button button--primary" href="/resources/">Continue shopping <span class="button-arrow" aria-hidden="true">→</span></a></div>`; else renderCartSummary(items, checkoutSummary, true); }
+  bindDynamicInteractions();
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       const open = toggle.getAttribute('aria-expanded') === 'true';

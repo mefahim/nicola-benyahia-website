@@ -3,7 +3,7 @@
 - **Preview:** `http://127.0.0.1:4173`
 - **Browser:** Headless Chromium (Playwright, installed in the sandbox)
 - **Viewports:** 1440×900 desktop; 768×1024 tablet; 390×844 mobile
-- **Routes:** 25 routes × 3 viewports = 75 page renders
+- **Routes:** 26 routes × 3 viewports = 78 page renders
 - **Scope:** direct route loads, JS runtime, local image decoding, document overflow, mobile navigation, FAQ disclosure, and screenshots.
 
 ## Route matrix
@@ -21,6 +21,7 @@
 | `/discovery-call/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/discovery-call.jpg` |
 | `/faq/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/faq.jpg` |
 | `/cart/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/cart.jpg` |
+| `/checkout/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/checkout.jpg` |
 | `/privacy/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/privacy.jpg` |
 | `/terms/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/terms.jpg` |
 | `/cookies/` | 1440x900 | 200 | 1 | PASS | PASS | 0 | `captures/desktop/cookies.jpg` |
@@ -46,6 +47,7 @@
 | `/discovery-call/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/discovery-call.jpg` |
 | `/faq/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/faq.jpg` |
 | `/cart/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/cart.jpg` |
+| `/checkout/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/checkout.jpg` |
 | `/privacy/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/privacy.jpg` |
 | `/terms/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/terms.jpg` |
 | `/cookies/` | 768x1024 | 200 | 1 | PASS | PASS | 0 | `captures/tablet/cookies.jpg` |
@@ -71,6 +73,7 @@
 | `/discovery-call/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/discovery-call.jpg` |
 | `/faq/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/faq.jpg` |
 | `/cart/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/cart.jpg` |
+| `/checkout/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/checkout.jpg` |
 | `/privacy/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/privacy.jpg` |
 | `/terms/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/terms.jpg` |
 | `/cookies/` | 390x844 | 200 | 1 | PASS | PASS | 0 | `captures/mobile/cookies.jpg` |

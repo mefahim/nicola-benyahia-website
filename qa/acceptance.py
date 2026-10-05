@@ -16,7 +16,7 @@ BASE_URL = os.environ.get("PREVIEW_URL", "http://127.0.0.1:4173").rstrip("/")
 CHROMIUM = os.environ.get("CHROMIUM_PATH", "/usr/bin/chromium")
 ROUTES = [
     "/", "/about/", "/therapy/", "/reclaim/", "/coaching/", "/resources/",
-    "/lemmy-lou-and-friends/", "/contact/", "/discovery-call/", "/faq/", "/cart/",
+    "/lemmy-lou-and-friends/", "/contact/", "/discovery-call/", "/faq/", "/cart/", "/checkout/",
     "/privacy/", "/terms/", "/cookies/", "/booking-policy/", "/refund-policy/",
     "/product/reclaim-workbook/", "/product/reclaim-guided-programme/",
     "/product/reclaim-1on1-intensive/", "/product/my-big-feelings/", "/product/calm-with-me/",

@@ -738,3 +738,151 @@ p { margin-bottom: 18px; }
   .product-purchase { align-items: stretch; flex-direction: column; }
   .product-purchase .button { width: 100%; }
 }
+
+
+/* Phase 1 — Lemmy Lou & Friends mockup-led visual identity */
+.theme-lemmy .site-header { border-bottom-color: rgba(10, 142, 219, .18); }
+.theme-lemmy .brand-copy strong { color: var(--lemmy-navy); }
+.theme-lemmy .header-cta { background: var(--lemmy-blue); }
+.theme-lemmy .header-cta:hover { background: var(--lemmy-navy); }
+.page-lemmy { color: var(--lemmy-navy); background: #fff; font-size: 15px; }
+.page-lemmy h1, .page-lemmy h2, .page-lemmy h3 { color: var(--lemmy-navy); }
+.page-lemmy .eyebrow { color: #0e77b8; }
+.page-lemmy .section-pad { padding-block: clamp(58px, 7vw, 96px); }
+.page-lemmy .button--lemmy { border-radius: 999px; box-shadow: 0 8px 0 rgba(22,58,117,.08); }
+.page-lemmy .lemmy-link { display: inline-flex; align-items: center; gap: 9px; min-height: 28px; color: var(--lemmy-blue); font-size: 11px; font-weight: 800; text-decoration: none; text-transform: uppercase; }
+.page-lemmy .lemmy-link:hover { color: var(--lemmy-pink); }
+
+.lemmy-hero { overflow: hidden; background: #fff; }
+.lemmy-hero__grid { display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: clamp(34px, 5vw, 72px); min-height: 580px; padding-block: 54px 70px; }
+.lemmy-hero__copy { position: relative; z-index: 2; max-width: 540px; }
+.lemmy-hero__copy .eyebrow { color: var(--lemmy-pink); }
+.lemmy-hero h1 { margin-bottom: 10px; color: var(--lemmy-blue); font-size: clamp(58px, 7vw, 92px); line-height: .92; letter-spacing: -.055em; }
+.lemmy-hero h1 em { color: var(--lemmy-pink); }
+.lemmy-tagline { margin: 15px 0 10px; color: var(--lemmy-navy); font-family: var(--font-display); font-size: 25px; }
+.lemmy-hero__copy > p:not(.eyebrow):not(.lemmy-tagline):not(.lemmy-motto) { max-width: 470px; color: #3e5682; }
+.lemmy-hero .hero-actions { gap: 18px; }
+.lemmy-motto { margin: 25px 0 0; color: var(--lemmy-pink); font-family: var(--font-display); font-size: 19px; line-height: 1.15; }
+.lemmy-hero__art { position: relative; min-width: 0; margin: 0; padding: 0; }
+.lemmy-hero__art img { display: block; width: 100%; height: auto; aspect-ratio: 1672 / 941; object-fit: contain; border-radius: 28px; box-shadow: 0 18px 42px rgba(22,58,117,.16); }
+.lemmy-hero__art figcaption { margin-top: 10px; color: #53627d; font-size: 10px; letter-spacing: .12em; text-align: right; text-transform: uppercase; }
+
+.lemmy-intro { background: var(--lemmy-sky); }
+.lemmy-intro__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 80px); align-items: start; }
+.lemmy-intro h2 { max-width: 530px; color: var(--lemmy-navy); }
+.lemmy-intro__grid > div:first-child > p:not(.eyebrow) { max-width: 540px; color: #405780; }
+.lemmy-learnings { padding: 28px 30px; border: 1px solid rgba(22,58,117,.1); border-radius: 22px; background: #fff; box-shadow: 0 14px 30px rgba(22,58,117,.07); }
+.lemmy-learnings h3 { margin-bottom: 14px; color: var(--lemmy-navy); font-size: 23px; }
+.lemmy-learnings ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 17px; padding-left: 18px; color: #405780; font-size: 12px; }
+.lemmy-learnings li::marker { color: var(--lemmy-pink); }
+.lemmy-learnings > p { margin: 13px 0 0; color: var(--lemmy-navy); font-size: 12px; }
+
+.lemmy-products { background: #fff; }
+.page-lemmy .section-heading--lemmy { max-width: 760px; }
+.page-lemmy .section-heading--lemmy .eyebrow { color: var(--lemmy-pink); }
+.page-lemmy .section-heading--lemmy h2 { color: var(--lemmy-navy); }
+.page-lemmy .section-heading--lemmy > p:not(.eyebrow) { color: #53627d; }
+.lemmy-subsection { margin-top: 48px; }
+.lemmy-subsection--more { padding-top: 42px; border-top: 2px dashed rgba(244,61,134,.22); }
+.lemmy-subsection__heading { display: flex; align-items: flex-start; gap: 16px; max-width: 760px; margin-bottom: 22px; }
+.lemmy-subsection__heading .eyebrow { margin-bottom: 7px; color: var(--lemmy-pink); }
+.lemmy-subsection__heading h3 { margin: 0; color: var(--lemmy-navy); font-size: clamp(24px, 3vw, 34px); }
+.lemmy-section-mark { display: inline-grid; place-items: center; width: 38px; height: 38px; flex: 0 0 auto; border-radius: 50%; color: #fff; background: var(--lemmy-pink); font-size: 18px; }
+.lemmy-subsection:nth-of-type(3) .lemmy-section-mark { background: var(--lemmy-purple); }
+.lemmy-subsection--more .lemmy-section-mark { background: var(--lemmy-gold); color: var(--lemmy-navy); }
+.lemmy-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
+.lemmy-product-grid--stories { grid-template-columns: repeat(2, minmax(0,1fr)); max-width: 820px; }
+.lemmy-product-grid--more { grid-template-columns: minmax(0, 390px); }
+.lemmy-product { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid rgba(22,58,117,.12); border-radius: 22px; background: #fff; box-shadow: 0 12px 28px rgba(22,58,117,.08); }
+.lemmy-product__cover { display: flex; align-items: center; justify-content: center; min-width: 0; height: 310px; flex: 0 0 310px; padding: 16px; overflow: hidden; background: var(--lemmy-sky); text-decoration: none; }
+.lemmy-product__cover img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 10px 23px rgba(20,48,91,.15); transition: transform 200ms ease; }
+.lemmy-product__cover:hover img { transform: translateY(-3px) rotate(-1deg); }
+.lemmy-product--pink .lemmy-product__cover { background: var(--lemmy-blush); }
+.lemmy-product--blue .lemmy-product__cover { background: var(--lemmy-sky); }
+.lemmy-product--green .lemmy-product__cover { background: var(--lemmy-mint); }
+.lemmy-product--sky .lemmy-product__cover { background: #eaf7ff; }
+.lemmy-product--mint .lemmy-product__cover { background: #eef8e9; }
+.lemmy-product--cream .lemmy-product__cover { background: var(--lemmy-cream); }
+.lemmy-product__body { display: flex; flex-direction: column; align-items: flex-start; flex: 1; padding: 21px 22px 24px; }
+.lemmy-product__kind { margin-bottom: 7px; color: #5a6c8d; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.lemmy-product__body h3 { margin-bottom: 10px; color: var(--lemmy-navy); font-size: 24px; }
+.lemmy-product__body h3 a { text-decoration: none; }
+.lemmy-product__body p { flex: 1; margin-bottom: 17px; color: #53627d; font-size: 12px; line-height: 1.54; }
+
+.lemmy-support { background: linear-gradient(115deg, #fff0f5, #eef8ff); }
+.lemmy-support__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.lemmy-support__panel { position: relative; overflow: hidden; min-height: 320px; padding: 31px; border: 1px solid rgba(22,58,117,.1); border-radius: 24px; background: #fff; box-shadow: 0 12px 28px rgba(22,58,117,.06); }
+.lemmy-support__panel--pros { background: #f4edff; }
+.lemmy-support__panel .eyebrow { color: var(--lemmy-pink); }
+.lemmy-support__panel--pros .eyebrow { color: var(--lemmy-purple); }
+.lemmy-support__panel h2 { font-size: 34px; }
+.lemmy-support__panel p, .lemmy-support__panel li { color: #53627d; font-size: 12px; line-height: 1.5; }
+.lemmy-support__panel ul { padding-left: 18px; }
+.lemmy-support__panel li::marker { color: var(--lemmy-pink); }
+.lemmy-support__panel--pros li::marker { color: var(--lemmy-purple); }
+.lemmy-support__panel .lemmy-link { margin-top: 9px; }
+.support-doodle { position: absolute; top: 12px; right: 22px; color: rgba(244,61,134,.2); font-family: var(--font-display); font-size: 63px; line-height: 1; }
+
+.lemmy-shop { background: #fffdf4; }
+.lemmy-shop-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+.lemmy-shop-card { min-height: 250px; padding: 28px; border-radius: 22px; background: var(--lemmy-blush); }
+.lemmy-shop-card--printables { background: var(--lemmy-sky); }
+.lemmy-shop-card--gifts { background: var(--lemmy-mint); }
+.lemmy-shop-icon { display: block; margin-bottom: 18px; color: var(--lemmy-pink); font-size: 42px; line-height: 1; }
+.lemmy-shop-card--printables .lemmy-shop-icon { color: var(--lemmy-blue); }
+.lemmy-shop-card--gifts .lemmy-shop-icon { color: var(--lemmy-green); }
+.lemmy-shop-card .eyebrow { margin-bottom: 8px; color: var(--lemmy-navy); }
+.lemmy-shop-card h3 { margin-bottom: 10px; font-size: 27px; }
+.lemmy-shop-card p { min-height: 47px; color: #405780; font-size: 12px; }
+
+.lemmy-author { background: #fff; }
+.lemmy-author__grid { display: grid; grid-template-columns: .55fr 1.1fr; gap: 70px; align-items: center; max-width: 940px; }
+.lemmy-author figure { margin: 0; }
+.lemmy-author figure img { width: 100%; max-height: 380px; object-fit: cover; object-position: center 30%; border: 7px solid white; border-radius: 24px; box-shadow: 0 12px 30px rgba(22,58,117,.15); }
+.lemmy-author figcaption { margin-top: 9px; color: #53627d; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.lemmy-author h2 { font-size: clamp(32px, 4vw, 48px); }
+.lemmy-author p { color: #405780; font-size: 14px; }
+.lemmy-author__signoff { margin: 21px 0 0; color: var(--lemmy-navy) !important; font-family: var(--font-display); font-size: 20px !important; font-weight: 700; }
+.lemmy-closing { overflow: hidden; background: var(--lemmy-blue); }
+.lemmy-closing__inner { display: flex; align-items: center; justify-content: space-between; gap: 35px; padding-block: 44px; }
+.lemmy-closing h2 { max-width: 650px; margin-bottom: 10px; color: #fff; font-size: clamp(31px, 4vw, 52px); }
+.lemmy-closing p { margin: 0; color: #e7f7ff; }
+.lemmy-closing__stars { display: block; margin-bottom: 12px; color: var(--lemmy-gold); letter-spacing: .22em; }
+.lemmy-closing .button--lemmy { color: var(--lemmy-navy); background: #fff; }
+.lemmy-closing .button--lemmy:hover { color: #fff; background: var(--lemmy-pink); }
+.lemmy-safety { padding: 16px 0; color: var(--lemmy-navy); background: #d9f1ff; }
+.lemmy-safety p { margin: 0; text-align: center; font-size: 11px; }
+
+@media (max-width: 900px) {
+  .lemmy-hero__grid { grid-template-columns: 1fr; gap: 28px; min-height: 0; }
+  .lemmy-hero__copy { max-width: 700px; }
+  .lemmy-hero__art { max-width: 760px; }
+  .lemmy-product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .lemmy-shop-grid { grid-template-columns: 1fr 1fr; }
+  .lemmy-shop-card:last-child { grid-column: 1 / -1; }
+  .lemmy-author__grid { gap: 42px; }
+}
+
+@media (max-width: 700px) {
+  .lemmy-hero__grid { padding-block: 40px 52px; }
+  .lemmy-hero h1 { font-size: clamp(55px, 15vw, 78px); }
+  .lemmy-hero__art img { border-radius: 18px; }
+  .lemmy-intro__grid { grid-template-columns: 1fr; gap: 24px; }
+  .lemmy-learnings { padding: 23px; }
+  .lemmy-subsection { margin-top: 38px; }
+  .lemmy-product-grid, .lemmy-product-grid--stories, .lemmy-product-grid--more { grid-template-columns: 1fr; max-width: none; }
+  .lemmy-product__cover { height: 300px; flex-basis: 300px; }
+  .lemmy-support__grid { grid-template-columns: 1fr; }
+  .lemmy-support__panel { min-height: 0; padding: 25px; }
+  .lemmy-shop-grid { grid-template-columns: 1fr; }
+  .lemmy-shop-card:last-child { grid-column: auto; }
+  .lemmy-author__grid { grid-template-columns: 1fr; gap: 30px; }
+  .lemmy-author figure { width: min(78%, 320px); }
+  .lemmy-closing__inner { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 420px) {
+  .lemmy-hero__art figcaption { text-align: left; }
+  .lemmy-learnings ul { grid-template-columns: 1fr; }
+  .lemmy-product__cover { height: 290px; flex-basis: 290px; }
+}

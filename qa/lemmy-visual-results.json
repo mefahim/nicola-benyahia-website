@@ -2,6 +2,7 @@
   "run": "Final visual acceptance",
   "url": "http://127.0.0.1:4173/nicola/lemmy-lou-and-friends/",
   "referenceViewport": "843x900",
+  "canonicalHost": "fhf.bro.bd",
   "viewportWidths": [
     320,
     360,
@@ -29,10 +30,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "none",
         "navDirection": "column",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -115,7 +114,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -149,10 +148,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "none",
         "navDirection": "column",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -235,7 +232,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -269,10 +266,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "none",
         "navDirection": "column",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -355,7 +350,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -389,10 +384,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "none",
         "navDirection": "column",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -475,7 +468,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -513,10 +506,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "none",
         "navDirection": "column",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -599,7 +590,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -633,10 +624,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "flex",
         "navDirection": "row",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -719,7 +708,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -753,10 +742,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 59,
         "navDisplay": "flex",
         "navDirection": "row",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -839,7 +826,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -873,10 +860,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 61,
         "navDisplay": "flex",
         "navDirection": "row",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -959,7 +944,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -993,10 +978,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 61,
         "navDisplay": "flex",
         "navDirection": "row",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -1079,7 +1062,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [
@@ -1113,10 +1096,8 @@
         "h1": 1,
         "brokenImages": 0,
         "imageCount": 12,
-        "headerHeight": 61,
         "navDisplay": "flex",
         "navDirection": "row",
-        "navLinks": 8,
         "productCards": [
           {
             "title": "My Big Feelings",
@@ -1199,7 +1180,7 @@
           "/nicola/cart/"
         ],
         "externalHosts": [
-          "fhf.pro.bd"
+          "fhf.bro.bd"
         ],
         "wrongHost": false,
         "sections": [

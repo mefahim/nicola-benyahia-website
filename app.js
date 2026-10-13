@@ -2,7 +2,7 @@
 (() => {
   'use strict';
 
-  const LIVE = 'https://fhf.pro.bd/nicola';
+  const LIVE = 'https://fhf.bro.bd/nicola';
   const GITHUB_PAGES_BASE = '/nicola-benyahia-website';
   const BASE_PATH = window.location.pathname === GITHUB_PAGES_BASE || window.location.pathname.startsWith(`${GITHUB_PAGES_BASE}/`)
     ? GITHUB_PAGES_BASE

@@ -2,7 +2,7 @@
 (() => {
   'use strict';
 
-  const LIVE = 'https://therapy.profahim.com';
+  const LIVE = 'https://fhf.pro.bd/nicola';
   const GITHUB_PAGES_BASE = '/nicola-benyahia-website';
   const BASE_PATH = window.location.pathname === GITHUB_PAGES_BASE || window.location.pathname.startsWith(`${GITHUB_PAGES_BASE}/`)
     ? GITHUB_PAGES_BASE
@@ -238,7 +238,7 @@
     const isLemmyBook = product.family === 'Lemmy Lou & Friends';
     return `<article class="product-card product-card--${product.color} ${compact ? 'product-card--compact' : ''}">
       ${product.image ? local(`/product/${product.slug}/`, image(product.image, `${product.title} cover`, '', 'lazy'), 'product-card__image', `aria-label="Read about ${product.title}"`) : `<div class="product-card__letter" aria-hidden="true">${product.family === 'RECLAIM™' ? 'R' : 'N'}</div>`}
-      <div class="product-card__body">${eyebrow(product.kind)}<h3>${local(`/product/${product.slug}/`, product.title)}</h3><p>${product.description}</p>${isLemmyBook ? `<p class="product-card__price">${money(product.price)}</p>` : ''}${local(`/product/${product.slug}/`, `${isLemmyBook ? 'Discover this book' : 'Explore this resource'} <span aria-hidden="true">→</span>`, 'text-link')}<button class="text-link product-card__add" type="button" data-add-to-cart="${product.slug}">Add to cart <span aria-hidden="true">+</span></button></div>
+      <div class="product-card__body">${eyebrow(product.kind)}<h3>${local(`/product/${product.slug}/`, product.title)}</h3><p class="product-card__description">${product.description}</p><div class="product-card__actions">${isLemmyBook ? `<p class="product-card__price">${money(product.price)}</p>` : ''}${local(`/product/${product.slug}/`, `${isLemmyBook ? 'Discover this book' : 'Explore this resource'} <span aria-hidden="true">→</span>`, 'text-link')}<button class="text-link product-card__add" type="button" data-add-to-cart="${product.slug}">Add to cart <span aria-hidden="true">+</span></button></div></div>
     </article>`;
   }
 

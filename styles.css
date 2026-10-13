@@ -74,6 +74,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* Type, buttons and page rhythm */
 h1, h2, h3, h4, p, figure, blockquote { margin-top: 0; }
 h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; line-height: 1.12; text-wrap: balance; }
+em, i { font-style: normal; }
 h1 { margin-bottom: 24px; font-size: clamp(46px, 6.2vw, 80px); letter-spacing: -.045em; }
 h1 em, h2 em { color: var(--terracotta); font-weight: 400; }
 h2 { margin-bottom: 18px; font-size: clamp(31px, 4.1vw, 54px); letter-spacing: -.035em; }
@@ -230,7 +231,11 @@ p { margin-bottom: 18px; }
 .product-card__body .eyebrow { margin-bottom: 8px; font-size: 9px; }
 .product-card__body h3 { margin-bottom: 10px; font-size: 25px; }
 .product-card__body h3 a { text-decoration: none; }
-.product-card__body p { flex: 1; margin-bottom: 19px; color: #5b5c55; font-size: 13px; line-height: 1.52; }
+.product-card__body p { margin-bottom: 19px; color: #5b5c55; font-size: 13px; line-height: 1.52; }
+.product-card__body .product-card__description { flex: 0 1 auto; }
+.product-card__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; margin-top: auto; }
+.product-card__actions p { margin: 0; }
+.product-card__actions .text-link { max-width: 100%; }
 .product-card__image { display: block; overflow: hidden; height: 255px; padding: 16px; background: #f8f5ef; }
 .product-card__image img { width: 100%; height: 100%; object-fit: contain; transition: transform 250ms ease; }
 .product-card__image:hover img { transform: scale(1.035); }
@@ -319,6 +324,7 @@ p { margin-bottom: 18px; }
 .resource-family--adult .product-card--compact .product-card__body { padding: 17px; }
 .resource-family--adult .product-card--compact .product-card__body h3 { font-size: 19px; }
 .resource-family--adult .product-card--compact .product-card__body p { font-size: 12px; }
+.resource-family--adult .product-card--compact .product-card__actions { gap: 8px; }
 .resource-kids { background: #f7f0e8; }
 .resource-kids .product-grid--kids { grid-template-columns: repeat(3, minmax(0,1fr)); margin-top: 38px; }
 .resource-kids .resource-family__intro { margin-inline: auto; text-align: center; }
@@ -583,6 +589,7 @@ p { margin-bottom: 18px; }
   .product-card, .product-card--compact { min-height: 0; }
   .product-card__image, .product-card--compact .product-card__image { height: 260px; }
   .product-card__body p { min-height: 0; }
+  .product-card__actions { margin-top: 8px; }
   .clinical-note__inner { grid-template-columns: 42px 1fr; gap: 16px; }
   .clinical-note__mark { width: 36px; height: 36px; }
   .page-intro__inner { padding-block: 60px 58px; }

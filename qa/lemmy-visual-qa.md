@@ -1,43 +1,76 @@
-# Lemmy Lou & Friends — Visual QA
+# Lemmy Lou & Friends — Visual QA ও Production Release
 
-## রেফারেন্স
+**তারিখ:** ১৪ অক্টোবর ২০২৬
 
-- ক্লায়েন্টের অনুমোদিত এক-পৃষ্ঠার PDF mockup: `Lemmy_Lou_Friends_Website_Visual_Mockup (1).pdf` (Google Drive থেকে পড়া হয়েছে; repository-তেও অনুমোদিত visual reference রয়েছে)।
-- ডেস্কটপ, ট্যাবলেট ও মোবাইলের page order, brand colours, character artwork, book covers, Nicola-র ছবি, shop/newsletter callout এবং footer একই visual direction-এ পুনর্গঠন করা হয়েছে।
-- ব্যবহার করা artwork ও book covers প্রকল্পে থাকা client-supplied Lemmy images থেকে নেওয়া; stock বা AI-generated image যোগ করা হয়নি।
+**Canonical live page:** [Lemmy Lou & Friends](https://fhf.bro.bd/nicola/lemmy-lou-and-friends/)
 
-## পরীক্ষার ফল
+**Branch:** `manus/lemmy-mockup-match`
 
-| Viewport | আকার | HTTP | Page width | Overflow | ভাঙা ছবি | JavaScript error |
-|---|---:|---:|---:|---|---:|---:|
-| Desktop | 1440 × 900 | 200 | 1440 / 1440 px | নেই | 0 | 0 |
-| Tablet | 768 × 1024 | 200 | 768 / 768 px | নেই | 0 | 0 |
-| Mobile | 390 × 844 | 200 | 390 / 390 px | নেই | 0 | 0 |
+**Visual/CSS commit:** `568616e`
 
-- ৯টি প্রধান section সঠিক ক্রমে রেন্ডার হয়েছে: Hero → Meet Lemmy Lou & Friends → Explore the Collection → Parents & Carers / Professionals → Shop → A Little Note From Nicola → newsletter callout → closing CTA → safety note.
-- একটি H1, সব local images-এর load/decode, section order এবং internal link safety যাচাই হয়েছে। `fhf.bro.bd` ও `therapy.profahim.com`-এ কোনো link যোগ করা হয়নি; internal route `/nicola/` base path-এ রয়েছে।
-- Mobile navigation খোলা এবং Escape দিয়ে বন্ধ—দুটিই পাস করেছে। `My Big Feelings`-এর বিদ্যমান product-detail route সরাসরি HTTP 200 দিয়েছে।
-- JavaScript syntax (`node --check app.js`) এবং Python QA harness syntax (`python3 -m py_compile qa/acceptance.py`) পাস করেছে। Root ও `public/` source mirrors সমান।
+**Canonical-host/app commit:** `55fd02c`
 
-## Capture
+**Reference width:** 843px
 
-- `qa/captures/mockup-review/lemmy-desktop.png`
-- `qa/captures/mockup-review/lemmy-tablet.png`
-- `qa/captures/mockup-review/lemmy-mobile.png`
+## সারাংশ
 
-## Newsletter সীমাবদ্ধতা
+অনুমোদিত mockup ধরে responsive refinement সম্পন্ন, GitHub branch-এ push এবং production-এ deploy করা হয়েছে। User-confirmed canonical base এখন `https://fhf.bro.bd/nicola/`। Lemmy route-এর local targeted QA **10/10 viewport** পাস করেছে; production live page-এর browser QA **4/4 viewport** পাস করেছে। Production page, JavaScript ও stylesheet—তিনটিই HTTP 200; production browser-এ 12/12 image load হয়েছে, horizontal overflow বা console/page error নেই।
 
-Mockup-এ email signup field দেখা গেলেও প্রকল্পের handoff নির্দেশনা নতুন mailing-list form নিষিদ্ধ করেছে এবং কোনো verified signup endpoint দেওয়া নেই। তাই ভুয়া submit behavior না বানিয়ে section-টি রাখা হয়েছে এবং CTA-কে বিদ্যমান `/nicola/resources/` route-এ যুক্ত করা হয়েছে।
+## পরিবর্তন
 
-## বিস্তৃত regression run-এর পর্যবেক্ষণ
+- Duplicate/পুরনো Lemmy responsive declarations সরিয়ে consolidated hub CSS রাখা হয়েছে; card height content-চালিত।
+- 320–430px mobile, 768–843px tablet/reference এবং desktop layout-এ navigation, spacing, cards ও CTA পুনঃসমন্বয় করা হয়েছে।
+- Product/story card cover-এ fixed 225/290px height সরানো হয়েছে; CTA আর cover/কার্ডের বাইরে যায় না।
+- Existing supplied artwork, book covers, portrait, approved copy ও prices অক্ষত রাখা হয়েছে।
+- Runtime app-এর `LIVE` base ও QA external-host allowlist user-confirmed `fhf.bro.bd`-এ আপডেট হয়েছে; same-site routes `/nicola/` prefix-এ থাকে।
+- `app.js`/`public/app.js` এবং root/public stylesheet mirror যাচাই করা হয়েছে। Newsletter endpoint না থাকায় কোনো কৃত্রিম signup form বা submit behavior যোগ করা হয়নি।
 
-বিদ্যমান ২৬টি route-কে ৩টি viewport-এ চালিয়ে মোট ৭৮টি render/capture করা হয়েছে। Lemmy route-এর তিনটি render-ই পাস করেছে। সম্পূর্ণ suite-এর non-Lemmy findings—হাত না দেওয়া, কারণ সেগুলো এই কাজের পরিধির বাইরে:
+## Local responsive QA
 
-- Harness-এর external-host allowlist-এ পুরোনো `therapy.profahim.com` আছে, কিন্তু অনুমোদিত canonical host `fhf.pro.bd` নেই; ফলে host check ৭৮টি route/viewport-তে warning দিয়েছে।
-- `About` route-এর `public/assets/about/` mirror-এ চারটি পূর্বস্থিত PNG অনুপস্থিত; তিন viewport-এ সেগুলো broken-image finding এবং ১২টি সংশ্লিষ্ট browser 404 তৈরি করেছে। Lemmy page-এর asset বা route-এ এর প্রভাব নেই।
+| প্রস্থ | পূর্ণ পৃষ্ঠার উচ্চতা | HTTP | Overflow | ছবি | ফল |
+|---:|---:|---:|---|---:|---|
+| 320px | 6433px | 200 | নেই | 12/12 | PASS |
+| 360px | 6249px | 200 | নেই | 12/12 | PASS |
+| 375px | 6191px | 200 | নেই | 12/12 | PASS |
+| 390px | 6176px | 200 | নেই | 12/12 | PASS |
+| 430px | 6089px | 200 | নেই | 12/12 | PASS |
+| 768px | 3342px | 200 | নেই | 12/12 | PASS |
+| 843px (mockup reference) | 3286px | 200 | নেই | 12/12 | PASS |
+| 1024px | 3296px | 200 | নেই | 12/12 | PASS |
+| 1280px | 3458px | 200 | নেই | 12/12 | PASS |
+| 1440px | 3465px | 200 | নেই | 12/12 | PASS |
 
-## Deployment
+প্রতিটি width-এ একটি H1, five-card CTA containment/no-overlap, support art overlap, section order, `/nicola/` route prefix ও allowed canonical host পরীক্ষা করা হয়েছে। 390px-এ menu open, `aria-expanded=true`, Escape-এ close—সব পাস।
 
-ব্যবহারকারীর স্পষ্ট অনুমোদনের পর preview branch `manus/lemmy-mockup-match` (commit `440c28e`) production static root `/var/www/nicola`-এ deploy করা হয়েছে। পরিবর্তনটি সীমিত ছিল `app.js`, `styles.css` এবং তিনটি নতুন Lemmy asset-এ; server-specific Lemmy HTML entrypoint ও অন্যান্য route অপরিবর্তিত রাখা হয়েছে। Static file হওয়ায় Nginx reload দরকার হয়নি।
+## Production live QA
 
-Deploy-এর আগে আগের app/style-এর rollback copy `/var/backups/nicola/20261014-0002`-তে রাখা হয়েছে। Final files-এর SHA-256 preview branch-এর সঙ্গে মিলেছে। Live route ও পাঁচটি প্রাসঙ্গিক resource HTTP 200 দিয়েছে; live browser-এ 1440, 768 ও 390 px viewport-এ ৯টি section, একটি H1, zero horizontal overflow, zero broken images এবং zero JavaScript errors যাচাই হয়েছে। Mobile menu interaction-ও পাস করেছে।
+Public canonical page সরাসরি browser-এ 320px, 390px, 843px ও 1440px-এ খোলা হয়েছে। চারটিতেই HTTP 200, scroll width viewport-এর সমান, 12/12 image load, no page/console/request errors। 390px mobile menu interaction-ও পাস; live app.js-এ canonical base সরাসরি পরীক্ষা করা হয়েছে।
+
+- [Live 320px mobile capture](captures/lemmy-live/320px.jpg)
+- [Live 390px mobile capture](captures/lemmy-live/390px.jpg)
+- [Live 843px reference capture](captures/lemmy-live/843px.jpg)
+- [Live 1440px desktop capture](captures/lemmy-live/1440px.jpg)
+
+## সাইট-ব্যাপী regression
+
+`qa/acceptance.py` দিয়ে **26 route × 3 viewport = 78 render/capture** এবং **2/2 interaction checks** চালানো হয়েছে। Lemmy route-এর তিন standard breakpoint পাস; নতুন host-এর জন্য কোনো warning নেই। Suite-এর একমাত্র বিদ্যমান findings `/about/`-এর চারটি অনুপস্থিত PNG (`beige.png`, `Casual.png`, `Jumper sat.png`, `blue and white - Copy.png`): তিন viewport-এ মোট 15টি image/404 finding। About page/assets এই scope-এর বাইরে; বাকি 75 route/viewport-এ finding ছিল না।
+
+## Screenshot ও data evidence
+
+- [843px local mockup-reference capture](captures/lemmy-final/843px.jpg)
+- [390px local mobile capture](captures/lemmy-final/390px.jpg)
+- [1440px local desktop capture](captures/lemmy-final/1440px.jpg)
+- [সব local/live screenshot ও viewport metrics-এর ZIP](lemmy-visual-evidence.zip)
+- [10-width machine-readable results (JSON)](lemmy-visual-results.json)
+
+## Production deployment
+
+- `public/styles.css` → `/var/www/nicola/styles.css`; SHA-256: `ce66b9e56c636e4a4bde1d6c7de8ce1d39e733c7f0f33f85be939e31630e0de5`; rollback copy: `/var/backups/nicola/20261014-0035-568616e/styles.css`.
+- `public/app.js` → `/var/www/nicola/app.js`; SHA-256: `8d1628d31e4843ed3f22032999edd2d424588fb97bab7394baf54974477b4408`; rollback copy: `/var/backups/nicola/20261014-0045-55fd02c/app.js`.
+- দুই live hash source branch-এর সঙ্গে মিলে; static file owner `www-data`, mode `644`। Nginx/DNS configuration পরিবর্তন বা reload করা হয়নি।
+- Branch-এ CSS/QA refinement commit `568616e` এবং canonical-host update commit `55fd02c` push হয়েছে।
+- Page, `/nicola/app.js`, `/nicola/styles.css`: canonical public host-এ HTTP 200; server/origin ও public browser—দুই দিকেই যাচাই হয়েছে।
+
+## অবশিষ্ট সীমা
+
+Mockup-এর কিছু wording বর্তমান অনুমোদিত copy থেকে আলাদা; copy ও price অক্ষত রাখার নির্দেশ মেনে তা বদলানো হয়নি। Newsletter signup endpoint সরবরাহ করা হয়নি, তাই বিদ্যমান CTA-ই রাখা হয়েছে। `/about/`-এর missing PNG-গুলো আলাদা asset-fix কাজ।

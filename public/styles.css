@@ -912,8 +912,8 @@ p { margin-bottom: 18px; }
 .page-product--lemmy .product-hero__copy .hero-lede { max-width: 650px; margin-bottom: 20px; color: #405780; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.65; }
 .page-product--lemmy .product-format { display: block; padding: 12px 15px; margin: 0 0 12px; border-radius: 14px; color: var(--lemmy-navy); background: #fff; font-size: 13px; line-height: 1.5; }
 .page-product--lemmy .product-audience { padding: 12px 15px; margin-bottom: 0; border-radius: 14px; color: #405780; background: rgba(229,245,255,.76); font-size: 13px; line-height: 1.55; }
-.page-product--lemmy .product-purchase { gap: 12px; margin-top: 22px; }
-.page-product--lemmy .product-price { padding: 8px 14px; border-radius: 999px; color: var(--lemmy-navy); background: var(--lemmy-cream); font-family: var(--font-body); font-size: 25px; font-weight: 900; }
+.page-product--lemmy .product-purchase { clear: both; gap: 12px; margin-top: 16px; }
+.page-product--lemmy .product-price { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; width: max-content; max-width: 100%; clear: both; margin: 24px 0 0; padding: 8px 14px; border-radius: 999px; color: var(--lemmy-navy); background: var(--lemmy-cream); font-family: var(--font-body); font-size: 25px; font-weight: 900; line-height: 1.2; }
 .page-product--lemmy .quantity-control { color: #405780; font-size: 12px; font-weight: 700; }
 .page-product--lemmy .quantity-control input { width: 70px; min-height: 44px; padding: 9px; border: 1px solid rgba(22,58,117,.24); border-radius: 12px; }
 .page-product--lemmy .button--lemmy { min-height: 48px; padding-inline: 21px; border-radius: 999px; color: #fff; background: var(--lemmy-pink); box-shadow: 0 5px 0 rgba(22,58,117,.08); }
@@ -942,7 +942,6 @@ p { margin-bottom: 18px; }
   .page-product--lemmy .product-hero__copy { padding: 24px 20px; border-radius: 22px; }
   .page-product--lemmy .product-hero__copy h1 { font-size: clamp(32px, 9vw, 44px); }
   .page-product--lemmy .product-purchase { align-items: stretch; flex-direction: column; }
-  .page-product--lemmy .product-purchase .product-price { align-self: flex-start; }
   .page-product--lemmy .product-purchase .quantity-control { justify-content: space-between; }
   .page-product--lemmy .product-purchase .button { width: 100%; }
 }

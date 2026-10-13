@@ -912,8 +912,8 @@ p { margin-bottom: 18px; }
 .page-product--lemmy .product-hero__copy .hero-lede { max-width: 650px; margin-bottom: 20px; color: #405780; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.65; }
 .page-product--lemmy .product-format { display: block; padding: 12px 15px; margin: 0 0 12px; border-radius: 14px; color: var(--lemmy-navy); background: #fff; font-size: 13px; line-height: 1.5; }
 .page-product--lemmy .product-audience { padding: 12px 15px; margin-bottom: 0; border-radius: 14px; color: #405780; background: rgba(229,245,255,.76); font-size: 13px; line-height: 1.55; }
-.page-product--lemmy .product-purchase { gap: 12px; margin-top: 22px; }
-.page-product--lemmy .product-price { padding: 8px 14px; border-radius: 999px; color: var(--lemmy-navy); background: var(--lemmy-cream); font-family: var(--font-body); font-size: 25px; font-weight: 900; }
+.page-product--lemmy .product-purchase { clear: both; gap: 12px; margin-top: 16px; }
+.page-product--lemmy .product-price { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; width: max-content; max-width: 100%; clear: both; margin: 24px 0 0; padding: 8px 14px; border-radius: 999px; color: var(--lemmy-navy); background: var(--lemmy-cream); font-family: var(--font-body); font-size: 25px; font-weight: 900; line-height: 1.2; }
 .page-product--lemmy .quantity-control { color: #405780; font-size: 12px; font-weight: 700; }
 .page-product--lemmy .quantity-control input { width: 70px; min-height: 44px; padding: 9px; border: 1px solid rgba(22,58,117,.24); border-radius: 12px; }
 .page-product--lemmy .button--lemmy { min-height: 48px; padding-inline: 21px; border-radius: 999px; color: #fff; background: var(--lemmy-pink); box-shadow: 0 5px 0 rgba(22,58,117,.08); }
@@ -942,7 +942,213 @@ p { margin-bottom: 18px; }
   .page-product--lemmy .product-hero__copy { padding: 24px 20px; border-radius: 22px; }
   .page-product--lemmy .product-hero__copy h1 { font-size: clamp(32px, 9vw, 44px); }
   .page-product--lemmy .product-purchase { align-items: stretch; flex-direction: column; }
-  .page-product--lemmy .product-purchase .product-price { align-self: flex-start; }
   .page-product--lemmy .product-purchase .quantity-control { justify-content: space-between; }
   .page-product--lemmy .product-purchase .button { width: 100%; }
 }
+
+/* Mockup-led refinements for Lemmy Lou & Friends. All rules are scoped to this route. */
+.page-lemmy {
+  --ll-navy: #143a75;
+  --ll-blue: #078edb;
+  --ll-pink: #ec3d87;
+  --ll-green: #28a95c;
+  --ll-purple: #7849d4;
+  --ll-yellow: #f5c928;
+  --ll-sky: #e8f7ff;
+  --ll-blush: #fff0f5;
+  --ll-cream: #fffbea;
+  --ll-mint: #eef8e9;
+  color: var(--ll-navy);
+  font-size: 16px;
+}
+.page-lemmy h1, .page-lemmy h2, .page-lemmy h3 { color: var(--ll-navy); }
+.page-lemmy .eyebrow { color: #117dbb; font-size: 11px; font-weight: 800; letter-spacing: .1em; }
+.page-lemmy .section-pad { padding-block: clamp(42px, 5.5vw, 76px); }
+.page-lemmy .button--lemmy { min-height: 46px; padding: 12px 24px; border-radius: 999px; color: #fff; background: var(--ll-pink); box-shadow: 0 4px 0 rgba(20,58,117,.1); font-size: 13px; font-weight: 800; }
+.page-lemmy .button--lemmy:hover { background: #d92670; transform: translateY(-1px); }
+.page-lemmy .lemmy-link { min-height: 42px; padding: 8px 16px; border-radius: 999px; color: #fff; background: var(--ll-pink); font-size: 11px; letter-spacing: .015em; text-decoration: none; }
+.page-lemmy .lemmy-link:hover { color: #fff; background: var(--ll-navy); }
+.page-lemmy a:focus-visible { outline: 3px solid #f3b900; outline-offset: 4px; }
+
+.lemmy-hero { position: relative; isolation: isolate; overflow: hidden; background: linear-gradient(115deg, #eefaff 0%, #fff 46%, #fff2f6 100%); }
+.lemmy-hero::before { position: absolute; z-index: -1; right: -5%; bottom: -100px; left: -5%; height: 180px; border-radius: 50% 50% 0 0 / 48% 48% 0 0; background: rgba(199,239,255,.58); content: ""; }
+.lemmy-hero__grid { grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(20px, 3.6vw, 52px); min-height: 0; padding-block: clamp(28px, 4vw, 56px) clamp(48px, 6vw, 80px); }
+.lemmy-hero__copy { max-width: 560px; }
+.lemmy-hero__copy .eyebrow { max-width: 360px; margin-bottom: 16px; color: #087fbe; }
+.lemmy-hero .lemmy-tagline { margin: 0 0 18px; color: var(--ll-blue); font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(36px, 4.5vw, 62px); font-weight: 900; letter-spacing: -.04em; line-height: .99; }
+.lemmy-hero .lemmy-tagline span { color: var(--ll-pink); }
+.lemmy-hero__copy > p:not(.eyebrow):not(.lemmy-tagline):not(.lemmy-motto) { max-width: 440px; color: #354f79; font-size: clamp(15px, 1.2vw, 17px); line-height: 1.65; }
+.lemmy-hero .hero-actions { align-items: flex-start; gap: 12px 18px; margin-top: 23px; }
+.lemmy-hero .hero-actions .text-link { min-height: 46px; font-size: 12px; }
+.lemmy-motto { display: inline-block; padding: 8px 14px; margin: 20px 0 0; border-radius: 16px 16px 16px 4px; color: var(--ll-navy); background: #fff5bd; font-size: 16px; font-weight: 800; line-height: 1.2; }
+.lemmy-hero__art { align-self: center; width: 100%; }
+.lemmy-hero__art img { width: 100%; height: auto; aspect-ratio: 1672 / 941; object-fit: contain; border-radius: 0; box-shadow: none; }
+
+.lemmy-intro { position: relative; background: linear-gradient(105deg, #e4f6ff 0%, #edfaff 54%, #fff0f5 100%); }
+.lemmy-intro__grid { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(28px, 5vw, 68px); align-items: center; }
+.lemmy-intro h2 { max-width: 570px; margin-bottom: 16px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(32px, 3.8vw, 48px); letter-spacing: -.03em; line-height: 1.08; }
+.lemmy-intro__grid > div:first-child > p:not(.eyebrow) { max-width: 570px; color: #354f79; font-size: 16px; line-height: 1.65; }
+.lemmy-intro__grid > div:first-child .lemmy-link { margin-top: 10px; }
+.lemmy-learnings { padding: clamp(22px, 3vw, 34px); border: 0; border-radius: 34px 24px 34px 24px; background: rgba(255,255,255,.87); box-shadow: 0 12px 30px rgba(20,58,117,.07); }
+.lemmy-learnings h3 { margin-bottom: 17px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(19px, 2.2vw, 27px); line-height: 1.2; }
+.lemmy-learnings ul { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px 20px; padding-left: 0; list-style: none; color: #314a70; font-size: 14px; line-height: 1.45; }
+.lemmy-learnings li { position: relative; padding-left: 22px; }
+.lemmy-learnings li::before { position: absolute; left: 0; color: var(--ll-pink); font-weight: 900; content: "♥"; }
+.lemmy-learnings li::marker { content: ""; }
+.lemmy-learnings > p { padding-top: 13px; margin-top: 14px; border-top: 1px solid #e7edf4; color: var(--ll-navy); font-size: 14px; line-height: 1.5; }
+
+.lemmy-products { position: relative; background: linear-gradient(180deg, #fffdf0 0, #fff 190px, #fff 100%); }
+.page-lemmy .section-heading--lemmy { max-width: 850px; margin-inline: auto; }
+.page-lemmy .section-heading--lemmy .eyebrow { color: var(--ll-pink); }
+.page-lemmy .section-heading--lemmy h2 { margin-bottom: 12px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(34px, 4vw, 50px); letter-spacing: -.03em; line-height: 1.08; }
+.page-lemmy .section-heading--lemmy > p:not(.eyebrow) { max-width: 660px; margin-inline: auto; color: #425b80; font-size: 16px; line-height: 1.55; }
+.lemmy-subsection { margin-top: clamp(32px, 4vw, 52px); }
+.lemmy-subsection__heading { align-items: center; gap: 13px; max-width: 900px; margin-bottom: 18px; }
+.lemmy-subsection__heading .eyebrow { margin-bottom: 4px; color: var(--ll-pink); }
+.lemmy-subsection__heading h3 { margin: 0; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(22px, 2.5vw, 32px); line-height: 1.15; }
+.lemmy-section-mark { width: 42px; height: 42px; border: 3px solid #fff; background: var(--ll-pink); box-shadow: 0 3px 10px rgba(20,58,117,.12); }
+.lemmy-subsection--stories .lemmy-section-mark { background: var(--ll-blue); }
+.lemmy-subsection--colouring .lemmy-section-mark { color: var(--ll-navy); background: var(--ll-yellow); }
+.lemmy-product-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(14px, 1.8vw, 22px); }
+.lemmy-product-grid--stories { grid-template-columns: repeat(2, minmax(0,1fr)); max-width: 920px; }
+.lemmy-product-grid--colouring { grid-template-columns: minmax(0, 1fr); max-width: 420px; }
+.lemmy-product { border: 0; border-radius: 24px; background: #fff; box-shadow: 0 8px 22px rgba(20,58,117,.1); transition: transform 180ms ease, box-shadow 180ms ease; }
+.lemmy-product:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(20,58,117,.14); }
+.lemmy-product__cover { box-sizing: border-box; display: flex; align-items: center; justify-content: center; width: 100%; height: clamp(200px, 19vw, 275px); min-height: 0; flex: 0 0 auto; padding: 18px; overflow: hidden; }
+.lemmy-product__cover img { display: block; width: auto; height: auto; min-width: 0; min-height: 0; max-width: 100%; max-height: 100%; flex: 0 1 auto; object-fit: contain; }
+.lemmy-product__cover:hover img { transform: translateY(-2px) rotate(-.5deg); }
+.lemmy-product__body { align-items: flex-start; min-height: 205px; padding: 19px 21px 22px; }
+.lemmy-product__kind { padding: 5px 9px; margin-bottom: 10px; border-radius: 999px; color: #31577d; background: #edf7fc; font-size: 10px; letter-spacing: .05em; }
+.lemmy-product__body h3 { margin-bottom: 9px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(20px, 2vw, 25px); line-height: 1.14; }
+.lemmy-product__body h3 a { text-decoration: none; }
+.lemmy-product__body p { flex: 1; margin-bottom: 12px; color: #455b7a; font-size: 14px; line-height: 1.55; }
+.lemmy-subsection--stories { padding: clamp(24px, 3vw, 36px); margin-inline: -14px; border-radius: 32px; background: #edf8ff; }
+.lemmy-subsection--colouring { padding-top: 4px; }
+.lemmy-subsection--colouring .lemmy-product-grid { grid-template-columns: minmax(0, 1fr); }
+
+.lemmy-support { background: linear-gradient(115deg, #fff0f5 0%, #fff8fb 48%, #eef8ff 100%); }
+.lemmy-support .section-heading--lemmy { margin-bottom: 28px; }
+.lemmy-support .section-heading--lemmy h2 { margin-bottom: 10px; }
+.lemmy-support__grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+.lemmy-support__panel { min-height: 0; padding: clamp(23px, 3vw, 34px); border: 0; border-radius: 28px; background: #fff; box-shadow: 0 8px 22px rgba(20,58,117,.07); }
+.lemmy-support__panel--pros { background: #f4efff; }
+.lemmy-support__panel .eyebrow { color: var(--ll-pink); }
+.lemmy-support__panel--pros .eyebrow { color: var(--ll-purple); }
+.lemmy-support__panel h3 { max-width: 390px; margin-bottom: 12px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(25px, 2.8vw, 34px); line-height: 1.12; }
+.lemmy-support__panel p, .lemmy-support__panel li { color: #405780; font-size: 15px; line-height: 1.55; }
+.lemmy-support__panel ul { padding-left: 19px; margin: 12px 0 16px; }
+.lemmy-support__panel li { padding-left: 3px; margin-bottom: 5px; }
+.lemmy-support__panel li::marker { color: var(--ll-pink); }
+.lemmy-support__panel--pros li::marker { color: var(--ll-purple); }
+.lemmy-support__panel .lemmy-link { margin-top: 4px; }
+.support-doodle { top: 13px; right: 19px; color: rgba(236,61,135,.23); font-size: 68px; }
+.lemmy-support__panel--pros .support-doodle { color: rgba(120,73,212,.26); }
+
+.lemmy-shop { background: #fffdf0; }
+.lemmy-shop .section-heading--lemmy { margin-bottom: 28px; }
+.lemmy-shop-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 17px; }
+.lemmy-shop-card { display: flex; flex-direction: column; align-items: flex-start; min-height: 0; padding: clamp(22px, 2.7vw, 31px); border: 1px solid rgba(20,58,117,.05); border-radius: 24px; background: #fff0f5; }
+.lemmy-shop-card--printables { background: #e8f7ff; }
+.lemmy-shop-card--gifts { background: #eef8e9; }
+.lemmy-shop-icon { display: grid; place-items: center; width: 58px; height: 58px; padding: 0; margin-bottom: 14px; border-radius: 19px; color: var(--ll-pink); background: rgba(255,255,255,.8); font-size: 34px; }
+.lemmy-shop-card--printables .lemmy-shop-icon { color: var(--ll-blue); }
+.lemmy-shop-card--gifts .lemmy-shop-icon { color: var(--ll-green); }
+.lemmy-shop-card .eyebrow { margin-bottom: 6px; color: var(--ll-navy); }
+.lemmy-shop-card h3 { margin-bottom: 9px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(21px, 2.2vw, 27px); line-height: 1.14; }
+.lemmy-shop-card p { min-height: 0; margin-bottom: 13px; color: #3d567a; font-size: 14px; line-height: 1.5; }
+.lemmy-shop-card .lemmy-link { margin-top: auto; }
+.lemmy-coming-soon { display: inline-flex; align-items: center; min-height: 42px; padding: 8px 18px; margin-top: auto; border-radius: 999px; color: #fff; background: var(--ll-green); font-size: 11px; font-weight: 800; text-transform: uppercase; }
+
+.lemmy-author { background: #e9f7ff; }
+.lemmy-author__grid { grid-template-columns: minmax(210px, .55fr) minmax(0, 1.3fr); gap: clamp(30px, 6vw, 78px); max-width: 1080px; }
+.lemmy-author figure { width: min(100%, 330px); justify-self: center; }
+.lemmy-author figure img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 28%; border: 6px solid #fff; border-radius: 50%; box-shadow: 0 10px 26px rgba(20,58,117,.12); }
+.lemmy-author figcaption { text-align: center; }
+.lemmy-author h2 { max-width: 700px; margin-bottom: 13px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; }
+.lemmy-author p { color: #354f79; font-size: 15px; line-height: 1.68; }
+.lemmy-author__signoff { padding-top: 8px; margin-top: 16px; color: var(--ll-navy) !important; font-size: 18px !important; }
+.lemmy-closing { position: relative; background: var(--ll-blue); }
+.lemmy-closing__inner { min-height: 190px; padding-block: clamp(32px, 4vw, 54px); }
+.lemmy-closing h2 { font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(32px, 4vw, 50px); line-height: 1.06; }
+.lemmy-closing p { max-width: 630px; font-size: 16px; line-height: 1.55; }
+.lemmy-closing .button--lemmy { min-height: 48px; color: var(--ll-navy); background: #fff; }
+.lemmy-closing .button--lemmy:hover { color: #fff; background: var(--ll-pink); }
+.lemmy-safety { padding-block: 13px; background: #d9f1ff; }
+.lemmy-safety p { color: #27496f; font-size: 12px; line-height: 1.5; }
+
+@media (max-width: 900px) {
+  .lemmy-hero__grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 24px; }
+  .lemmy-hero .hero-actions { flex-direction: column; }
+  .lemmy-hero .hero-actions .button, .lemmy-hero .hero-actions .text-link { width: fit-content; }
+  .lemmy-product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .lemmy-shop-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .lemmy-shop-card:last-child { grid-column: auto; }
+  .lemmy-shop-card { min-height: 250px; }
+}
+@media (max-width: 700px) {
+  .page-lemmy .section-pad { padding-block: 42px; }
+  .lemmy-hero__grid { grid-template-columns: 1fr; gap: 20px; padding-block: 34px 46px; }
+  .lemmy-hero__copy { max-width: 600px; }
+  .lemmy-hero .lemmy-tagline { font-size: clamp(39px, 11vw, 56px); }
+  .lemmy-hero .hero-actions { flex-direction: row; flex-wrap: wrap; }
+  .lemmy-hero__art { width: 100%; max-width: 640px; justify-self: center; }
+  .lemmy-hero__art img { border-radius: 0; }
+  .lemmy-intro__grid { grid-template-columns: 1fr; gap: 22px; }
+  .lemmy-intro h2 { font-size: clamp(30px, 8vw, 42px); }
+  .lemmy-learnings { padding: 23px; border-radius: 25px; }
+  .lemmy-learnings ul { grid-template-columns: repeat(2, minmax(0,1fr)); font-size: 13px; }
+  .lemmy-subsection { margin-top: 31px; }
+  .lemmy-subsection--stories { padding: 22px; margin-inline: 0; border-radius: 25px; }
+  .lemmy-product-grid, .lemmy-product-grid--stories { grid-template-columns: repeat(2, minmax(0,1fr)); max-width: none; }
+  .lemmy-product-grid--colouring { grid-template-columns: minmax(0, 1fr); max-width: 420px; }
+  .lemmy-product__cover { height: clamp(210px, 53vw, 300px); padding: 12px; }
+  .lemmy-product__body { min-height: 235px; padding: 17px; }
+  .lemmy-product__body h3 { font-size: 20px; }
+  .lemmy-product__body p { font-size: 13px; }
+  .lemmy-support__grid { grid-template-columns: 1fr; gap: 15px; }
+  .lemmy-support__panel { padding: 25px; }
+  .lemmy-shop-grid { grid-template-columns: 1fr; }
+  .lemmy-shop-card { min-height: 0; padding: 24px; }
+  .lemmy-author__grid { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 24px; }
+  .lemmy-author figure { width: 100%; }
+  .lemmy-author__grid .lemmy-author__signoff { margin-top: 12px; }
+  .lemmy-closing__inner { align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .page-lemmy .section-pad { padding-block: 36px; }
+  .lemmy-hero__copy .eyebrow { max-width: 300px; font-size: 10px; }
+  .lemmy-hero .hero-actions { align-items: stretch; flex-direction: column; }
+  .lemmy-hero .hero-actions .button, .lemmy-hero .hero-actions .text-link { width: fit-content; }
+  .lemmy-hero .lemmy-tagline { font-size: clamp(38px, 11.5vw, 50px); }
+  .lemmy-intro h2 { font-size: 32px; }
+  .lemmy-learnings ul { grid-template-columns: 1fr; }
+  .page-lemmy .section-heading--lemmy h2 { font-size: 34px; }
+  .lemmy-subsection__heading { align-items: flex-start; }
+  .lemmy-subsection__heading h3 { font-size: 23px; }
+  .lemmy-product-grid, .lemmy-product-grid--stories { grid-template-columns: 1fr; }
+  .lemmy-product-grid--colouring { grid-template-columns: 1fr; }
+  .lemmy-product__cover { height: 290px; }
+  .lemmy-product__body { min-height: 0; }
+  .lemmy-product__body h3 { font-size: 23px; }
+  .lemmy-product__body p { font-size: 14px; }
+  .lemmy-support__panel h3 { font-size: 28px; }
+  .lemmy-author__grid { grid-template-columns: 1fr; gap: 20px; }
+  .lemmy-author figure { width: min(68%, 240px); }
+  .lemmy-author__grid > div { width: 100%; }
+  .lemmy-author h2 { font-size: 34px; }
+  .lemmy-closing__inner { flex-direction: column; gap: 20px; }
+  .lemmy-closing .button--lemmy { width: fit-content; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lemmy-product, .lemmy-product__cover img { transition: none; }
+}
+.lemmy-product-grid--stories { grid-template-columns: repeat(3, minmax(0,1fr)); max-width: none; }
+.lemmy-more-stories { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; min-height: 100%; padding: clamp(20px, 2.5vw, 30px); border-radius: 24px; background: #fff8c9; }
+.lemmy-more-stories__mark { display: grid; place-items: center; width: 45px; height: 45px; margin-bottom: 14px; border: 3px solid #fff; border-radius: 50%; color: var(--ll-navy); background: var(--ll-yellow); font-size: 21px; }
+.lemmy-more-stories .eyebrow { color: #987400; }
+.lemmy-more-stories h4 { margin: 0 0 10px; color: var(--ll-navy); font-family: "Trebuchet MS", "Arial Rounded MT Bold", system-ui, sans-serif; font-size: clamp(23px, 2.4vw, 30px); font-weight: 800; line-height: 1.12; }
+.lemmy-more-stories p { max-width: 300px; margin: 0; color: #405780; font-size: 14px; line-height: 1.55; }
+.lemmy-shop-cover { display: grid; place-items: center; width: 100%; height: 120px; margin: 0 0 12px; }
+.lemmy-shop-cover img { display: block; width: auto; height: 100%; max-width: 100%; object-fit: contain; border-radius: 5px; box-shadow: 0 5px 13px rgba(20,58,117,.15); }
+@media (max-width: 700px) { .lemmy-product-grid--stories { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 480px) { .lemmy-product-grid--stories { grid-template-columns: 1fr; } .lemmy-more-stories { min-height: 0; } .lemmy-shop-cover { height: 140px; } }

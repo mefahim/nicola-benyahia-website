@@ -1,6 +1,6 @@
 # Responsive Visual Acceptance
 
-- **Preview:** `http://127.0.0.1:4173`
+- **Preview:** `http://127.0.0.1:4300/nicola`
 - **Browser:** Headless Chromium (Playwright, installed in the sandbox)
 - **Viewports:** 1440×900 desktop; 768×1024 tablet; 390×844 mobile
 - **Routes:** 26 routes × 3 viewports = 78 page renders

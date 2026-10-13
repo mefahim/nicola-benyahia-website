@@ -38,4 +38,6 @@ Mockup-এ email signup field দেখা গেলেও প্রকল্প
 
 ## Deployment
 
-এই কাজটি repository-র static preview-তে সীমিত রাখা হয়েছে। Project handoff-এ production deployment-এর জন্য পৃথক স্পষ্ট authorization প্রয়োজন বলা আছে; তাই production server-এ কোনো ফাইল পরিবর্তন বা deploy করা হয়নি।
+ব্যবহারকারীর স্পষ্ট অনুমোদনের পর preview branch `manus/lemmy-mockup-match` (commit `440c28e`) production static root `/var/www/nicola`-এ deploy করা হয়েছে। পরিবর্তনটি সীমিত ছিল `app.js`, `styles.css` এবং তিনটি নতুন Lemmy asset-এ; server-specific Lemmy HTML entrypoint ও অন্যান্য route অপরিবর্তিত রাখা হয়েছে। Static file হওয়ায় Nginx reload দরকার হয়নি।
+
+Deploy-এর আগে আগের app/style-এর rollback copy `/var/backups/nicola/20261014-0002`-তে রাখা হয়েছে। Final files-এর SHA-256 preview branch-এর সঙ্গে মিলেছে। Live route ও পাঁচটি প্রাসঙ্গিক resource HTTP 200 দিয়েছে; live browser-এ 1440, 768 ও 390 px viewport-এ ৯টি section, একটি H1, zero horizontal overflow, zero broken images এবং zero JavaScript errors যাচাই হয়েছে। Mobile menu interaction-ও পাস করেছে।

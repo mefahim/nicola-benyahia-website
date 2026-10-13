@@ -1,0 +1,1224 @@
+{
+  "run": "Final visual acceptance",
+  "url": "http://127.0.0.1:4173/nicola/lemmy-lou-and-friends/",
+  "referenceViewport": "843x900",
+  "viewportWidths": [
+    320,
+    360,
+    375,
+    390,
+    430,
+    768,
+    843,
+    1024,
+    1280,
+    1440
+  ],
+  "passed": true,
+  "results": [
+    {
+      "viewport": "320x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 320,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "pageHeight": 6433,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "none",
+        "navDirection": "column",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/320px.jpg"
+    },
+    {
+      "viewport": "360x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "pageHeight": 6249,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "none",
+        "navDirection": "column",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/360px.jpg"
+    },
+    {
+      "viewport": "375x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 375,
+        "clientWidth": 375,
+        "scrollWidth": 375,
+        "pageHeight": 6191,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "none",
+        "navDirection": "column",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/375px.jpg"
+    },
+    {
+      "viewport": "390x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "pageHeight": 6176,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "none",
+        "navDirection": "column",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": {
+        "opened": true,
+        "ariaExpanded": "true",
+        "closedByEscape": true
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/390px.jpg"
+    },
+    {
+      "viewport": "430x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 430,
+        "clientWidth": 430,
+        "scrollWidth": 430,
+        "pageHeight": 6089,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "none",
+        "navDirection": "column",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/430px.jpg"
+    },
+    {
+      "viewport": "768x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "pageHeight": 3342,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "flex",
+        "navDirection": "row",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/768px.jpg"
+    },
+    {
+      "viewport": "843x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 843,
+        "clientWidth": 843,
+        "scrollWidth": 843,
+        "pageHeight": 3286,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 59,
+        "navDisplay": "flex",
+        "navDirection": "row",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/843px.jpg"
+    },
+    {
+      "viewport": "1024x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 1024,
+        "clientWidth": 1024,
+        "scrollWidth": 1024,
+        "pageHeight": 3296,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 61,
+        "navDisplay": "flex",
+        "navDirection": "row",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/1024px.jpg"
+    },
+    {
+      "viewport": "1280x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 1280,
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "pageHeight": 3458,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 61,
+        "navDisplay": "flex",
+        "navDirection": "row",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/1280px.jpg"
+    },
+    {
+      "viewport": "1440x900",
+      "http": 200,
+      "passed": true,
+      "issues": [],
+      "metrics": {
+        "width": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "pageHeight": 3465,
+        "h1": 1,
+        "brokenImages": 0,
+        "imageCount": 12,
+        "headerHeight": 61,
+        "navDisplay": "flex",
+        "navDirection": "row",
+        "navLinks": 8,
+        "productCards": [
+          {
+            "title": "My Big Feelings",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Calm With Me",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "I Am Amazing",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Lemmy Lou and the Worry Cloud",
+            "inside": true,
+            "ctaCoverOverlap": false
+          },
+          {
+            "title": "Layth and the Strong Little No",
+            "inside": true,
+            "ctaCoverOverlap": false
+          }
+        ],
+        "support": [
+          {
+            "ctaArtOverlap": false
+          },
+          {
+            "ctaArtOverlap": false
+          }
+        ],
+        "internalLinks": [
+          "/nicola/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/coaching/",
+          "/nicola/reclaim/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/resources/",
+          "/nicola/contact/",
+          "/nicola/cart/",
+          "/nicola/lemmy-lou-and-friends/#collection",
+          "/nicola/resources/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/my-big-feelings/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/calm-with-me/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/i-am-amazing/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/worry-cloud-storybook/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/strong-little-no/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/product/affirmation-colouring-book/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/resources/",
+          "/nicola/",
+          "/nicola/about/",
+          "/nicola/therapy/",
+          "/nicola/reclaim/",
+          "/nicola/coaching/",
+          "/nicola/resources/",
+          "/nicola/lemmy-lou-and-friends/",
+          "/nicola/faq/",
+          "/nicola/contact/",
+          "/nicola/cart/"
+        ],
+        "externalHosts": [
+          "fhf.pro.bd"
+        ],
+        "wrongHost": false,
+        "sections": [
+          "lemmy-hero",
+          "lemmy-intro",
+          "lemmy-products",
+          "lemmy-support",
+          "lemmy-shop",
+          "lemmy-author",
+          "lemmy-newsletter",
+          "lemmy-closing",
+          "lemmy-safety"
+        ]
+      },
+      "menuInteraction": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "qa/captures/lemmy-final/1440px.jpg"
+    }
+  ]
+}

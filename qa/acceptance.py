@@ -141,7 +141,7 @@ def main() -> int:
                         problems.append(f"{route} at {viewport_name}: horizontal overflow ({snapshot['scrollWidth']} > {snapshot['clientWidth']} CSS px)")
                     if snapshot["brokenImages"]:
                         problems.append(f"{route} at {viewport_name}: broken images: {snapshot['brokenImages']}")
-                    unexpected_hosts = sorted({host for host in snapshot["externalHosts"] if host != "therapy.profahim.com"})
+                    unexpected_hosts = sorted({host for host in snapshot["externalHosts"] if host != "fhf.pro.bd"})
                     if unexpected_hosts:
                         problems.append(f"{route} at {viewport_name}: unverified external hosts {unexpected_hosts}")
                     page.screenshot(path=str(screenshot_path), full_page=True, type="jpeg", quality=65, animations="disabled")

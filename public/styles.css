@@ -398,84 +398,6 @@ p { margin-bottom: 18px; }
 .policy-notice .small-note { margin: 17px 0 0; }
 .page-not-found .page-intro__inner { padding-bottom: 100px; }
 
-/* Lemmy Lou & Friends — separate bright child-resource identity */
-.theme-lemmy .site-header { border-bottom-color: rgba(10, 142, 219, .18); }
-.theme-lemmy .brand-copy strong { color: var(--lemmy-navy); }
-.theme-lemmy .header-cta { background: var(--lemmy-blue); }
-.theme-lemmy .header-cta:hover { background: var(--lemmy-navy); }
-.page-lemmy { color: var(--lemmy-navy); font-size: 15px; }
-.page-lemmy h1, .page-lemmy h2, .page-lemmy h3 { color: var(--lemmy-navy); }
-.page-lemmy .eyebrow { color: #0e77b8; }
-.lemmy-hero { overflow: hidden; background: linear-gradient(125deg, #e9f8ff 0%, #fff8dc 62%, #ffe9f0 100%); }
-.lemmy-hero__grid { display: grid; grid-template-columns: .84fr 1.16fr; align-items: center; gap: 36px; min-height: 560px; padding-block: 54px 68px; }
-.lemmy-hero__copy { position: relative; z-index: 2; max-width: 520px; }
-.lemmy-hero__copy .eyebrow { color: var(--lemmy-pink); }
-.lemmy-hero h1 { margin-bottom: 9px; color: var(--lemmy-blue); font-size: clamp(60px, 7vw, 89px); line-height: .95; }
-.lemmy-hero h1 em { color: var(--lemmy-pink); }
-.lemmy-tagline { margin: 15px 0 10px; color: var(--lemmy-navy); font-family: var(--font-display); font-size: 25px; }
-.lemmy-hero__copy > p:not(.eyebrow):not(.lemmy-tagline):not(.lemmy-motto) { max-width: 470px; color: #3e5682; }
-.lemmy-hero .hero-actions { gap: 18px; }
-.page-lemmy .text-link { color: var(--lemmy-navy); }
-.lemmy-motto { margin: 25px 0 0; color: var(--lemmy-pink); font-family: var(--font-display); font-size: 19px; line-height: 1.15; }
-.lemmy-hero__art { position: relative; min-height: 430px; }
-.lemmy-cover { position: absolute; width: 34%; height: 350px; object-fit: cover; border: 5px solid white; box-shadow: 0 17px 38px rgba(22, 58, 117, .2); }
-.lemmy-cover--hero { z-index: 1; top: 38px; left: 34%; width: 36%; height: 386px; transform: rotate(-3deg); }
-.lemmy-cover--float-one { z-index: 3; top: 4px; left: 3%; height: 280px; transform: rotate(-10deg); }
-.lemmy-cover--float-two { z-index: 2; right: 0; bottom: 12px; width: 32%; height: 292px; transform: rotate(7deg); }
-.lemmy-intro { background: var(--lemmy-sky); }
-.lemmy-intro__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-.lemmy-intro h2 { max-width: 530px; color: var(--lemmy-navy); }
-.lemmy-intro__grid > div:first-child > p:not(.eyebrow) { max-width: 540px; color: #405780; }
-.lemmy-learnings { padding: 26px 29px; background: var(--white); }
-.lemmy-learnings h3 { margin-bottom: 14px; color: var(--lemmy-navy); font-size: 23px; }
-.lemmy-learnings ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 17px; padding-left: 18px; color: #405780; font-size: 12px; }
-.lemmy-learnings li::marker { color: var(--lemmy-pink); }
-.lemmy-learnings > p { margin: 13px 0 0; color: var(--lemmy-navy); font-size: 12px; }
-.lemmy-products { background: #fffdf4; }
-.page-lemmy .section-heading .eyebrow { color: var(--lemmy-pink); }
-.page-lemmy .section-heading h2 { color: var(--lemmy-navy); }
-.page-lemmy .section-heading > p:not(.eyebrow) { color: #53627d; }
-.lemmy-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
-.lemmy-product { display: flex; flex-direction: column; min-width: 0; border: 1px solid rgba(22,58,117,.12); background: white; }
-.lemmy-product__cover { display: flex; align-items: center; justify-content: center; box-sizing: border-box; flex-shrink: 0; overflow: hidden; height: 330px; min-height: 0; padding: 15px; text-decoration: none; }
-.lemmy-product__cover img { display: block; width: auto; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 10px 23px rgba(20,48,91,.15); transition: transform 200ms ease; }
-.lemmy-product__cover:hover img { transform: translateY(-3px) rotate(-1deg); }
-.lemmy-product--pink .lemmy-product__cover { background: var(--lemmy-blush); }
-.lemmy-product--blue .lemmy-product__cover { background: var(--lemmy-sky); }
-.lemmy-product--green .lemmy-product__cover { background: var(--lemmy-mint); }
-.lemmy-product--sky .lemmy-product__cover { background: #eaf7ff; }
-.lemmy-product--mint .lemmy-product__cover { background: #eef8e9; }
-.lemmy-product--cream .lemmy-product__cover { background: var(--lemmy-cream); }
-.lemmy-product__body { display: flex; flex-direction: column; align-items: flex-start; flex: 1; padding: 20px 22px 23px; }
-.lemmy-product__kind { margin-bottom: 7px; color: #5a6c8d; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.lemmy-product__body h3 { margin-bottom: 10px; color: var(--lemmy-navy); font-size: 24px; }
-.lemmy-product__body h3 a { text-decoration: none; }
-.lemmy-product__body p { flex: 1; margin-bottom: 17px; color: #53627d; font-size: 12px; line-height: 1.54; }
-.lemmy-link { display: inline-flex; gap: 9px; color: var(--lemmy-blue); font-size: 11px; font-weight: 800; text-decoration: none; text-transform: uppercase; }
-.lemmy-link:hover { color: var(--lemmy-pink); }
-.lemmy-support { background: linear-gradient(115deg, #fff0f5, #eef8ff); }
-.lemmy-support__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.lemmy-support__panel { position: relative; overflow: hidden; min-height: 310px; padding: 30px; border: 1px solid rgba(22,58,117,.1); background: rgba(255,255,255,.82); }
-.lemmy-support__panel--pros { background: rgba(243, 235, 255, .88); }
-.lemmy-support__panel .eyebrow { color: var(--lemmy-pink); }
-.lemmy-support__panel--pros .eyebrow { color: var(--lemmy-purple); }
-.lemmy-support__panel h2 { font-size: 34px; }
-.lemmy-support__panel p, .lemmy-support__panel li { color: #53627d; font-size: 12px; line-height: 1.5; }
-.lemmy-support__panel ul { padding-left: 18px; }
-.lemmy-support__panel li::marker { color: var(--lemmy-pink); }
-.lemmy-support__panel--pros li::marker { color: var(--lemmy-purple); }
-.support-doodle { position: absolute; top: 12px; right: 22px; color: rgba(244,61,134,.2); font-family: var(--font-display); font-size: 63px; line-height: 1; }
-.lemmy-author { background: var(--lemmy-sky); }
-.lemmy-author__grid { display: grid; grid-template-columns: .55fr 1.1fr; gap: 70px; align-items: center; max-width: 940px; }
-.lemmy-author figure { margin: 0; }
-.lemmy-author figure img { width: 100%; max-height: 380px; object-fit: cover; object-position: center 30%; border: 7px solid white; box-shadow: 0 12px 30px rgba(22,58,117,.15); }
-.lemmy-author figcaption { margin-top: 9px; color: #53627d; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
-.lemmy-author h2 { font-size: clamp(32px, 4vw, 48px); }
-.lemmy-author p { color: #405780; font-size: 14px; }
-.lemmy-author__signoff { margin: 21px 0 0; color: var(--lemmy-navy) !important; font-family: var(--font-display); font-size: 20px !important; font-weight: 700; }
-.lemmy-safety { padding: 16px 0; color: var(--lemmy-navy); background: #d9f1ff; }
-.lemmy-safety p { margin: 0; text-align: center; font-size: 11px; }
-
 /* Footer */
 .site-footer { color: #f7f4ee; background: #303831; }
 .footer-main { display: grid; grid-template-columns: 1.15fr .78fr 1fr; gap: 50px; padding-block: 58px 48px; }
@@ -500,7 +422,6 @@ p { margin-bottom: 18px; }
   .header-cta { padding: 10px 11px; font-size: 10px; }
   .home-hero__grid { gap: 55px; }
   .home-hero__copy h1 { font-size: clamp(44px, 5.6vw, 66px); }
-  .lemmy-product__cover { height: 290px; }
 }
 
 @media (max-width: 900px) {
@@ -633,25 +554,6 @@ p { margin-bottom: 18px; }
   .story-ending > div { justify-content: flex-start; }
   .credential-strip__inner { align-items: flex-start; flex-direction: column; gap: 5px; }
   .credential-strip__inner .small-note { margin: 4px 0 0; }
-  .lemmy-hero__grid { grid-template-columns: 1fr; gap: 18px; padding-block: 47px 57px; }
-  .lemmy-hero h1 { font-size: clamp(58px, 15vw, 78px); }
-  .lemmy-hero__art { min-height: 305px; margin-inline: 4px; }
-  .lemmy-cover { height: 258px; border-width: 4px; }
-  .lemmy-cover--hero { top: 21px; left: 32%; width: 37%; height: 278px; }
-  .lemmy-cover--float-one { top: 0; left: 0; width: 35%; height: 215px; }
-  .lemmy-cover--float-two { right: 0; bottom: 2px; width: 33%; height: 210px; }
-  .lemmy-intro__grid { grid-template-columns: 1fr; gap: 24px; }
-  .lemmy-learnings { padding: 22px; }
-  .lemmy-learnings ul { grid-template-columns: 1fr 1fr; gap: 7px 12px; }
-  .lemmy-product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
-  .lemmy-product__cover { height: 225px; padding: 10px; }
-  .lemmy-product__body { padding: 16px; }
-  .lemmy-product__body h3 { font-size: 21px; }
-  .lemmy-product__body p { font-size: 11px; }
-  .lemmy-support__grid { grid-template-columns: 1fr; }
-  .lemmy-support__panel { min-height: 0; padding: 23px; }
-  .lemmy-author__grid { grid-template-columns: 1fr; gap: 30px; }
-  .lemmy-author figure { width: min(74%, 300px); }
   .footer-main { grid-template-columns: 1fr; gap: 27px; padding-block: 42px 34px; }
   .footer-brand { grid-column: auto; }
   .footer-links > div { max-width: 520px; }
@@ -671,11 +573,6 @@ p { margin-bottom: 18px; }
   .home-portrait-frame { width: 85%; }
   .mini-covers { min-height: 230px; }
   .mini-cover { height: clamp(170px, 54vw, 205px); max-width: 42%; }
-  .lemmy-hero__art { min-height: 270px; }
-  .lemmy-cover--hero { height: 240px; }
-  .lemmy-cover--float-one, .lemmy-cover--float-two { height: 185px; }
-  .lemmy-product-grid { grid-template-columns: 1fr; }
-  .lemmy-product__cover { height: 290px; }
   .story-photo-pair { gap: 8px; }
   .story-photo-pair img, .story-photo-pair figure:nth-child(2) img { height: 175px; }
   .story-photo-pair figure:last-child { transform: translate(-3px, 16px) rotate(1.3deg); }
@@ -752,151 +649,666 @@ p { margin-bottom: 18px; }
 }
 
 
-/* Phase 1 — Lemmy Lou & Friends mockup-led visual identity */
-.theme-lemmy .site-header { border-bottom-color: rgba(10, 142, 219, .18); }
-.theme-lemmy .brand-copy strong { color: var(--lemmy-navy); }
-.theme-lemmy .header-cta { background: var(--lemmy-blue); }
-.theme-lemmy .header-cta:hover { background: var(--lemmy-navy); }
-.page-lemmy { color: var(--lemmy-navy); background: #fff; font-size: 15px; }
-.page-lemmy h1, .page-lemmy h2, .page-lemmy h3 { color: var(--lemmy-navy); }
-.page-lemmy .eyebrow { color: #0e77b8; }
-.page-lemmy .section-pad { padding-block: clamp(58px, 7vw, 96px); }
-.page-lemmy .button--lemmy { border-radius: 999px; box-shadow: 0 8px 0 rgba(22,58,117,.08); }
-.page-lemmy .lemmy-link { display: inline-flex; align-items: center; gap: 9px; min-height: 28px; color: var(--lemmy-blue); font-size: 11px; font-weight: 800; text-decoration: none; text-transform: uppercase; }
-.page-lemmy .lemmy-link:hover { color: var(--lemmy-pink); }
+/* Lemmy Lou & Friends hub — consolidated, reference-led styles */
+.theme-lemmy .site-header--lemmy {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(10, 142, 219, .15);
+  background: rgba(255, 255, 255, .97);
+  box-shadow: 0 2px 10px rgba(22, 58, 117, .035);
+}
+.theme-lemmy .site-header--lemmy .header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1320px, calc(100% - 48px));
+  min-height: 60px;
+  gap: 12px;
+}
+.theme-lemmy .lemmy-brand { width: 100px; min-width: 92px; }
+.theme-lemmy .lemmy-brand__logo { width: 96px; height: 46px; object-fit: contain; }
+.theme-lemmy .site-header--lemmy .site-nav {
+  position: static;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(7px, 1.1vw, 15px);
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.theme-lemmy .site-header--lemmy .nav-link {
+  padding: 7px 0;
+  border: 0;
+  color: #183d78;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.theme-lemmy .site-header--lemmy .nav-link:hover,
+.theme-lemmy .site-header--lemmy .nav-link.is-active { color: #e72c8a; }
+.theme-lemmy .site-header--lemmy .nav-link::after { background: #e72c8a; }
+.theme-lemmy .site-header--lemmy .menu-toggle { display: none; }
+.lemmy-header-bag {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 40px;
+  flex: 0 0 auto;
+  color: var(--lemmy-navy);
+}
+.lemmy-header-bag svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+.lemmy-header-bag:hover { color: var(--lemmy-pink); }
 
-.lemmy-hero { overflow: hidden; background: #fff; }
-.lemmy-hero__grid { display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: clamp(34px, 5vw, 72px); min-height: 580px; padding-block: 54px 70px; }
-.lemmy-hero__copy { position: relative; z-index: 2; max-width: 540px; }
+.page-lemmy {
+  color: var(--lemmy-navy);
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.52;
+}
+.page-lemmy .container { width: min(var(--container), calc(100% - 48px)); }
+.page-lemmy h1,
+.page-lemmy h2,
+.page-lemmy h3 {
+  color: var(--lemmy-navy);
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-weight: 800;
+  letter-spacing: -.025em;
+}
+.page-lemmy .eyebrow {
+  margin-bottom: 9px;
+  color: #0e77b8;
+  font-size: 9px;
+  letter-spacing: .12em;
+  line-height: 1.4;
+}
+.page-lemmy .section-pad { padding-block: clamp(30px, 4vw, 52px); }
+.page-lemmy .button--lemmy {
+  min-height: 42px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--lemmy-pink);
+  box-shadow: none;
+}
+.page-lemmy .button--lemmy:hover { background: #cf216f; }
+.page-lemmy .text-link { color: var(--lemmy-navy); }
+.page-lemmy .lemmy-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 30px;
+  max-width: 100%;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--lemmy-pink);
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.page-lemmy .lemmy-link:hover { color: #fff; filter: brightness(.91); }
+
+.lemmy-hero {
+  overflow: hidden;
+  background: linear-gradient(110deg, #eef9ff 0%, #fff 54%, #fff4f8 100%);
+}
+.lemmy-hero__grid {
+  display: grid;
+  grid-template-columns: .94fr 1.06fr;
+  align-items: center;
+  gap: clamp(22px, 3vw, 42px);
+  min-height: 0;
+  padding-block: 20px 24px;
+}
+.lemmy-hero__copy { position: relative; z-index: 1; max-width: 560px; }
 .lemmy-hero__copy .eyebrow { color: var(--lemmy-pink); }
-.lemmy-hero h1 { margin-bottom: 10px; color: var(--lemmy-blue); font-size: clamp(58px, 7vw, 92px); line-height: .92; letter-spacing: -.055em; }
+.lemmy-hero h1 {
+  margin-bottom: 8px;
+  color: var(--lemmy-blue);
+  font-size: clamp(48px, 6.8vw, 82px);
+  line-height: .96;
+  letter-spacing: -.04em;
+}
 .lemmy-hero h1 em { color: var(--lemmy-pink); }
-.lemmy-tagline { margin: 15px 0 10px; color: var(--lemmy-navy); font-family: var(--font-display); font-size: 25px; }
-.lemmy-hero__copy > p:not(.eyebrow):not(.lemmy-tagline):not(.lemmy-motto) { max-width: 470px; color: #3e5682; }
-.lemmy-hero .hero-actions { gap: 18px; }
-.lemmy-motto { margin: 25px 0 0; color: var(--lemmy-pink); font-family: var(--font-display); font-size: 19px; line-height: 1.15; }
-.lemmy-hero__art { position: relative; min-width: 0; margin: 0; padding: 0; }
-.lemmy-hero__art img { display: block; width: 100%; height: auto; aspect-ratio: 1672 / 941; object-fit: contain; border-radius: 28px; box-shadow: 0 18px 42px rgba(22,58,117,.16); }
-.lemmy-hero__art figcaption { margin-top: 10px; color: #53627d; font-size: 10px; letter-spacing: .12em; text-align: right; text-transform: uppercase; }
-
-.lemmy-intro { background: var(--lemmy-sky); }
-.lemmy-intro__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 80px); align-items: start; }
-.lemmy-intro h2 { max-width: 530px; color: var(--lemmy-navy); }
-.lemmy-intro__grid > div:first-child > p:not(.eyebrow) { max-width: 540px; color: #405780; }
-.lemmy-learnings { padding: 28px 30px; border: 1px solid rgba(22,58,117,.1); border-radius: 22px; background: #fff; box-shadow: 0 14px 30px rgba(22,58,117,.07); }
-.lemmy-learnings h3 { margin-bottom: 14px; color: var(--lemmy-navy); font-size: 23px; }
-.lemmy-learnings ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 17px; padding-left: 18px; color: #405780; font-size: 12px; }
-.lemmy-learnings li::marker { color: var(--lemmy-pink); }
-.lemmy-learnings > p { margin: 13px 0 0; color: var(--lemmy-navy); font-size: 12px; }
-
-.lemmy-products { background: #fff; }
-.page-lemmy .section-heading--lemmy { max-width: 760px; }
-.page-lemmy .section-heading--lemmy .eyebrow { color: var(--lemmy-pink); }
-.page-lemmy .section-heading--lemmy h2 { color: var(--lemmy-navy); }
-.page-lemmy .section-heading--lemmy > p:not(.eyebrow) { color: #53627d; }
-.lemmy-subsection { margin-top: 48px; }
-.lemmy-subsection--more { padding-top: 42px; border-top: 2px dashed rgba(244,61,134,.22); }
-.lemmy-subsection__heading { display: flex; align-items: flex-start; gap: 16px; max-width: 760px; margin-bottom: 22px; }
-.lemmy-subsection__heading .eyebrow { margin-bottom: 7px; color: var(--lemmy-pink); }
-.lemmy-subsection__heading h3 { margin: 0; color: var(--lemmy-navy); font-size: clamp(24px, 3vw, 34px); }
-.lemmy-section-mark { display: inline-grid; place-items: center; width: 38px; height: 38px; flex: 0 0 auto; border-radius: 50%; color: #fff; background: var(--lemmy-pink); font-size: 18px; }
-.lemmy-subsection:nth-of-type(3) .lemmy-section-mark { background: var(--lemmy-purple); }
-.lemmy-subsection--more .lemmy-section-mark { background: var(--lemmy-gold); color: var(--lemmy-navy); }
-.lemmy-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
-.lemmy-product-grid--stories { grid-template-columns: repeat(2, minmax(0,1fr)); max-width: 820px; }
-.lemmy-product-grid--more { grid-template-columns: minmax(0, 390px); }
-.lemmy-product { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid rgba(22,58,117,.12); border-radius: 22px; background: #fff; box-shadow: 0 12px 28px rgba(22,58,117,.08); }
-.lemmy-product__cover { box-sizing: border-box; display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 0; height: 310px; flex: 0 0 310px; padding: 16px; overflow: hidden; background: var(--lemmy-sky); text-decoration: none; }
-.lemmy-product__cover img { display: block; width: auto; height: auto; min-width: 0; min-height: 0; max-width: 100%; max-height: 100%; flex: 0 1 auto; object-fit: contain; box-shadow: 0 10px 23px rgba(20,48,91,.15); transition: transform 200ms ease; }
-.lemmy-product__cover:hover img { transform: translateY(-3px) rotate(-1deg); }
-.lemmy-product--pink .lemmy-product__cover { background: var(--lemmy-blush); }
-.lemmy-product--blue .lemmy-product__cover { background: var(--lemmy-sky); }
-.lemmy-product--green .lemmy-product__cover { background: var(--lemmy-mint); }
-.lemmy-product--sky .lemmy-product__cover { background: #eaf7ff; }
-.lemmy-product--mint .lemmy-product__cover { background: #eef8e9; }
-.lemmy-product--cream .lemmy-product__cover { background: var(--lemmy-cream); }
-.lemmy-product__body { display: flex; flex-direction: column; align-items: flex-start; flex: 1; padding: 21px 22px 24px; }
-.lemmy-product__kind { margin-bottom: 7px; color: #5a6c8d; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.lemmy-product__body h3 { margin-bottom: 10px; color: var(--lemmy-navy); font-size: 24px; }
-.lemmy-product__body h3 a { text-decoration: none; }
-.lemmy-product__body p { flex: 1; margin-bottom: 17px; color: #53627d; font-size: 12px; line-height: 1.54; }
-
-.lemmy-support { background: linear-gradient(115deg, #fff0f5, #eef8ff); }
-.lemmy-support__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.lemmy-support__panel { position: relative; overflow: hidden; min-height: 320px; padding: 31px; border: 1px solid rgba(22,58,117,.1); border-radius: 24px; background: #fff; box-shadow: 0 12px 28px rgba(22,58,117,.06); }
-.lemmy-support__panel--pros { background: #f4edff; }
-.lemmy-support__panel .eyebrow { color: var(--lemmy-pink); }
-.lemmy-support__panel--pros .eyebrow { color: var(--lemmy-purple); }
-.lemmy-support__panel h2 { font-size: 34px; }
-.lemmy-support__panel p, .lemmy-support__panel li { color: #53627d; font-size: 12px; line-height: 1.5; }
-.lemmy-support__panel ul { padding-left: 18px; }
-.lemmy-support__panel li::marker { color: var(--lemmy-pink); }
-.lemmy-support__panel--pros li::marker { color: var(--lemmy-purple); }
-.lemmy-support__panel .lemmy-link { margin-top: 9px; }
-.support-doodle { position: absolute; top: 12px; right: 22px; color: rgba(244,61,134,.2); font-family: var(--font-display); font-size: 63px; line-height: 1; }
-
-.lemmy-shop { background: #fffdf4; }
-.lemmy-shop-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
-.lemmy-shop-card { min-height: 250px; padding: 28px; border-radius: 22px; background: var(--lemmy-blush); }
-.lemmy-shop-card--printables { background: var(--lemmy-sky); }
-.lemmy-shop-card--gifts { background: var(--lemmy-mint); }
-.lemmy-shop-icon { display: block; margin-bottom: 18px; color: var(--lemmy-pink); font-size: 42px; line-height: 1; }
-.lemmy-shop-card--printables .lemmy-shop-icon { color: var(--lemmy-blue); }
-.lemmy-shop-card--gifts .lemmy-shop-icon { color: var(--lemmy-green); }
-.lemmy-shop-card .eyebrow { margin-bottom: 8px; color: var(--lemmy-navy); }
-.lemmy-shop-card h3 { margin-bottom: 10px; font-size: 27px; }
-.lemmy-shop-card p { min-height: 47px; color: #405780; font-size: 12px; }
-
-.lemmy-author { background: #fff; }
-.lemmy-author__grid { display: grid; grid-template-columns: .55fr 1.1fr; gap: 70px; align-items: center; max-width: 940px; }
-.lemmy-author figure { margin: 0; }
-.lemmy-author figure img { width: 100%; max-height: 380px; object-fit: cover; object-position: center 30%; border: 7px solid white; border-radius: 24px; box-shadow: 0 12px 30px rgba(22,58,117,.15); }
-.lemmy-author figcaption { margin-top: 9px; color: #53627d; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
-.lemmy-author h2 { font-size: clamp(32px, 4vw, 48px); }
-.lemmy-author p { color: #405780; font-size: 14px; }
-.lemmy-author__signoff { margin: 21px 0 0; color: var(--lemmy-navy) !important; font-family: var(--font-display); font-size: 20px !important; font-weight: 700; }
-.lemmy-closing { overflow: hidden; background: var(--lemmy-blue); }
-.lemmy-closing__inner { display: flex; align-items: center; justify-content: space-between; gap: 35px; padding-block: 44px; }
-.lemmy-closing h2 { max-width: 650px; margin-bottom: 10px; color: #fff; font-size: clamp(31px, 4vw, 52px); }
-.lemmy-closing p { margin: 0; color: #e7f7ff; }
-.lemmy-closing__stars { display: block; margin-bottom: 12px; color: var(--lemmy-gold); letter-spacing: .22em; }
-.lemmy-closing .button--lemmy { color: var(--lemmy-navy); background: #fff; }
-.lemmy-closing .button--lemmy:hover { color: #fff; background: var(--lemmy-pink); }
-.lemmy-safety { padding: 16px 0; color: var(--lemmy-navy); background: #d9f1ff; }
-.lemmy-safety p { margin: 0; text-align: center; font-size: 11px; }
-
-@media (max-width: 900px) {
-  .lemmy-hero__grid { grid-template-columns: 1fr; gap: 28px; min-height: 0; }
-  .lemmy-hero__copy { max-width: 700px; }
-  .lemmy-hero__art { max-width: 760px; }
-  .lemmy-product-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .lemmy-shop-grid { grid-template-columns: 1fr 1fr; }
-  .lemmy-shop-card:last-child { grid-column: 1 / -1; }
-  .lemmy-author__grid { gap: 42px; }
+.lemmy-tagline {
+  margin: 10px 0 8px;
+  color: var(--lemmy-navy);
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.2;
+}
+.lemmy-hero__copy > p:not(.eyebrow):not(.lemmy-tagline):not(.lemmy-motto) {
+  max-width: 470px;
+  margin-bottom: 12px;
+  color: #3e5682;
+  font-size: 13px;
+  line-height: 1.46;
+}
+.lemmy-hero .hero-actions { align-items: center; gap: 10px 16px; margin-top: 14px; }
+.lemmy-motto {
+  margin: 12px 0 0;
+  color: var(--lemmy-pink);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.lemmy-hero__art { min-width: 0; margin: 0; }
+.lemmy-hero__art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.34 / 1;
+  object-fit: cover;
+  object-position: center 42%;
+  border: 3px solid #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 22px rgba(22, 58, 117, .1);
+}
+.lemmy-hero__art figcaption {
+  margin-top: 5px;
+  color: #173a75;
+  font-size: 9px;
+  font-weight: 700;
+  text-align: right;
 }
 
-@media (max-width: 700px) {
-  .lemmy-hero__grid { padding-block: 40px 52px; }
-  .lemmy-hero h1 { font-size: clamp(55px, 15vw, 78px); }
-  .lemmy-hero__art img { border-radius: 18px; }
-  .lemmy-intro__grid { grid-template-columns: 1fr; gap: 24px; }
-  .lemmy-learnings { padding: 23px; }
-  .lemmy-subsection { margin-top: 38px; }
-  .lemmy-product-grid, .lemmy-product-grid--stories, .lemmy-product-grid--more { grid-template-columns: 1fr; max-width: none; }
-  .lemmy-product__cover { height: 300px; flex-basis: 300px; }
-  .lemmy-support__grid { grid-template-columns: 1fr; }
-  .lemmy-support__panel { min-height: 0; padding: 25px; }
+.lemmy-intro { background: var(--lemmy-sky); }
+.lemmy-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+}
+.lemmy-intro h2 {
+  max-width: 520px;
+  margin-bottom: 12px;
+  font-size: clamp(28px, 3.5vw, 40px);
+  line-height: 1.08;
+}
+.lemmy-intro__grid > div:first-child > p:not(.eyebrow) {
+  max-width: 540px;
+  margin-bottom: 12px;
+  color: #405780;
+  font-size: 12px;
+}
+.lemmy-learnings {
+  padding: clamp(17px, 2.4vw, 25px);
+  border: 0;
+  border-radius: 24px 34px 24px 30px;
+  background: #fff0f5;
+  box-shadow: none;
+}
+.lemmy-learnings h3 {
+  margin-bottom: 10px;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.2;
+}
+.lemmy-learnings ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 12px;
+  padding: 0;
+  margin: 0;
+  color: #405780;
+  font-size: 10px;
+  line-height: 1.35;
+  list-style: none;
+}
+.lemmy-learnings li { position: relative; padding-left: 15px; }
+.lemmy-learnings li::before {
+  position: absolute;
+  top: .05em;
+  left: 0;
+  color: var(--lemmy-pink);
+  content: '♥';
+  font-size: 10px;
+}
+.lemmy-learnings > p { margin: 10px 0 0; color: var(--lemmy-navy); font-size: 10px; line-height: 1.4; }
+
+.lemmy-products { background: #fff; }
+.page-lemmy .section-heading--lemmy {
+  max-width: 820px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+.page-lemmy .section-heading--lemmy .eyebrow { color: var(--lemmy-pink); }
+.page-lemmy .section-heading--lemmy h2 {
+  margin-bottom: 7px;
+  font-size: clamp(29px, 3.7vw, 40px);
+}
+.page-lemmy .section-heading--lemmy > p:not(.eyebrow) {
+  margin: 0 auto;
+  color: #53627d;
+  font-size: 12px;
+}
+.lemmy-subsection { margin-top: 20px; }
+.lemmy-subsection--more { padding-top: 22px; border-top: 1px solid rgba(244, 61, 134, .18); }
+.lemmy-subsection__heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  max-width: 900px;
+  margin: 0 auto 12px;
+}
+.lemmy-subsection__heading .eyebrow { margin-bottom: 3px; color: var(--lemmy-pink); }
+.lemmy-subsection__heading h3 {
+  margin: 0;
+  font-size: clamp(17px, 2.2vw, 24px);
+  line-height: 1.15;
+}
+.lemmy-section-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--lemmy-pink);
+  font-size: 16px;
+}
+.lemmy-subsection--more .lemmy-section-mark { color: var(--lemmy-navy); background: var(--lemmy-blue); }
+.lemmy-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.lemmy-product-grid--stories { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; }
+.lemmy-product {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(76px, .72fr);
+  align-items: stretch;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 16px;
+  background: var(--lemmy-blush);
+  box-shadow: none;
+}
+.lemmy-product--blue { background: #e7f6ff; }
+.lemmy-product--green { background: #e8f7e5; }
+.lemmy-product--sky { background: #e8f6ff; }
+.lemmy-product--mint { background: #edf7e9; }
+.lemmy-product--cream { background: var(--lemmy-cream); }
+.lemmy-product__cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 100%;
+  padding: 9px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .28);
+  text-decoration: none;
+}
+.lemmy-product__cover img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 188px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px rgba(20, 48, 91, .12);
+  transition: transform 180ms ease;
+}
+.lemmy-product__cover:hover img { transform: translateY(-2px); }
+.lemmy-product-grid--featured .lemmy-product { grid-template-columns: minmax(0, 1.15fr) minmax(76px, .82fr); }
+.lemmy-product-grid--featured .lemmy-product__body { grid-column: 1; grid-row: 1; }
+.lemmy-product-grid--featured .lemmy-product__cover { grid-column: 2; grid-row: 1; }
+.lemmy-product-grid--stories .lemmy-product { grid-template-columns: minmax(78px, .82fr) minmax(0, 1.18fr); }
+.lemmy-product__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(12px, 1.5vw, 18px);
+}
+.lemmy-product__kind {
+  margin-bottom: 5px;
+  color: #53627d;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.lemmy-product__body h3 {
+  margin-bottom: 7px;
+  font-size: clamp(16px, 1.9vw, 21px);
+  line-height: 1.08;
+}
+.lemmy-product__body h3 a { text-decoration: none; }
+.lemmy-product__body p {
+  flex: 1 0 auto;
+  margin: 0 0 8px;
+  color: #405780;
+  font-size: 10px;
+  line-height: 1.38;
+}
+.lemmy-product__body .lemmy-product__price {
+  flex: 0 0 auto;
+  margin: 0 0 8px;
+  color: var(--lemmy-navy);
+  font-size: 13px;
+  font-weight: 900;
+}
+.lemmy-product--blue .lemmy-link,
+.lemmy-product--sky .lemmy-link { background: var(--lemmy-blue); }
+.lemmy-product--green .lemmy-link,
+.lemmy-product--mint .lemmy-link { background: var(--lemmy-green); }
+.lemmy-product--cream .lemmy-link { color: var(--lemmy-navy); background: var(--lemmy-gold); }
+.lemmy-coming-card {
+  display: grid;
+  grid-template-columns: minmax(70px, .75fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  overflow: hidden;
+  padding: 12px;
+  border-radius: 16px;
+  background: var(--lemmy-cream);
+}
+.lemmy-coming-card__cover {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 120px;
+  padding: 4px;
+}
+.lemmy-coming-card__cover img { width: auto; height: auto; max-width: 100%; max-height: 145px; object-fit: contain; }
+.lemmy-coming-card .eyebrow { margin-bottom: 5px; color: #aa7800; font-size: 8px; }
+.lemmy-coming-card h3 { margin-bottom: 6px; font-size: clamp(15px, 1.8vw, 19px); line-height: 1.1; }
+.lemmy-coming-card p { margin-bottom: 7px; color: #405780; font-size: 9px; line-height: 1.35; }
+.lemmy-coming-card .lemmy-link { padding-inline: 9px; font-size: 8px; }
+
+.lemmy-support { background: #fff5f8; }
+.lemmy-support__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.lemmy-support__panel {
+  position: relative;
+  min-width: 0;
+  padding: clamp(18px, 2.1vw, 25px);
+  overflow: hidden;
+  border: 0;
+  border-radius: 18px;
+  background: #ffeaf1;
+}
+.lemmy-support__panel--pros { background: #f1eaff; }
+.lemmy-support__panel .eyebrow { color: var(--lemmy-pink); }
+.lemmy-support__panel--pros .eyebrow { color: var(--lemmy-purple); }
+.lemmy-support__panel h2 {
+  max-width: 63%;
+  margin-bottom: 8px;
+  font-size: clamp(22px, 2.6vw, 31px);
+  line-height: 1.08;
+}
+.lemmy-support__panel > p:not(.eyebrow) {
+  max-width: 58%;
+  margin-bottom: 7px;
+  color: #405780;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.lemmy-support__panel ul {
+  max-width: 58%;
+  padding-left: 16px;
+  margin: 0 0 8px;
+}
+.lemmy-support__panel li { color: #405780; font-size: 9px; line-height: 1.35; }
+.lemmy-support__panel li::marker { color: var(--lemmy-pink); }
+.lemmy-support__panel--pros li::marker { color: var(--lemmy-purple); }
+.lemmy-support__panel .lemmy-link { position: relative; z-index: 1; margin-top: 5px; }
+.lemmy-support__panel--pros .lemmy-link { background: var(--lemmy-purple); }
+.support-doodle {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  color: rgba(244, 61, 134, .5);
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1;
+}
+.lemmy-support__panel--pros .support-doodle { color: rgba(140, 85, 207, .55); }
+.lemmy-support__art {
+  position: absolute;
+  right: 10px;
+  bottom: 42px;
+  width: 40%;
+  aspect-ratio: 1.38 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .32);
+}
+.lemmy-support__art img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+
+.lemmy-shop { background: #fffdf2; }
+.lemmy-shop-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.lemmy-shop-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(16px, 2vw, 22px);
+  border-radius: 16px;
+  background: #ffeaf2;
+}
+.lemmy-shop-card--printables { background: #e4f5ff; }
+.lemmy-shop-card--gifts { background: #e9f8e7; }
+.lemmy-shop-icon { display: block; margin-bottom: 8px; font-size: 30px; line-height: 1; }
+.lemmy-shop-card .eyebrow { margin-bottom: 5px; color: var(--lemmy-navy); font-size: 8px; }
+.lemmy-shop-card h3 { margin-bottom: 6px; font-size: clamp(18px, 2vw, 22px); line-height: 1.12; }
+.lemmy-shop-card p { flex: 1 0 auto; margin-bottom: 10px; color: #405780; font-size: 10px; line-height: 1.38; }
+.lemmy-shop-card--printables .lemmy-link { background: var(--lemmy-blue); }
+.lemmy-shop-card--gifts .lemmy-link { background: var(--lemmy-green); }
+
+.lemmy-author { background: var(--lemmy-sky); }
+.lemmy-author__grid {
+  display: grid;
+  grid-template-columns: minmax(165px, .42fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 42px);
+  max-width: 1040px;
+}
+.lemmy-author figure { width: min(100%, 205px); margin: 0; }
+.lemmy-author figure img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 29%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(22, 58, 117, .1);
+}
+.lemmy-author figcaption { margin-top: 7px; color: #53627d; font-size: 8px; text-align: center; }
+.lemmy-author h2 { margin-bottom: 10px; font-size: clamp(27px, 3.4vw, 39px); line-height: 1.1; }
+.lemmy-author p { margin-bottom: 9px; color: #405780; font-size: 11px; line-height: 1.48; }
+.lemmy-author__signoff { margin: 12px 0 0 !important; color: var(--lemmy-navy) !important; font-family: var(--font-display); font-size: 17px !important; font-weight: 700; }
+
+.lemmy-newsletter { padding: 18px 0; background: linear-gradient(95deg, #fff0f5, #fff 52%, #e9f7ff); }
+.lemmy-newsletter__inner {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+}
+.lemmy-newsletter__brand { display: grid; place-items: center; }
+.lemmy-newsletter__brand img { width: 86px; height: 54px; object-fit: contain; }
+.lemmy-newsletter__copy .eyebrow { margin-bottom: 4px; color: var(--lemmy-pink); }
+.lemmy-newsletter__copy h2 { margin-bottom: 4px; font-size: clamp(19px, 2.5vw, 27px); line-height: 1.12; }
+.lemmy-newsletter__copy p { margin: 0; color: #405780; font-size: 10px; line-height: 1.4; }
+.lemmy-newsletter .button { white-space: nowrap; }
+.lemmy-closing { overflow: hidden; background: linear-gradient(95deg, #168eda, #067ac5); }
+.lemmy-closing__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 24px; }
+.lemmy-closing h2 { max-width: 650px; margin-bottom: 6px; color: #fff; font-size: clamp(26px, 3.5vw, 42px); line-height: 1.08; }
+.lemmy-closing p { margin: 0; color: #e7f7ff; font-size: 11px; }
+.lemmy-closing__stars { display: block; margin-bottom: 5px; color: var(--lemmy-gold); letter-spacing: .16em; }
+.lemmy-closing .button--lemmy { color: var(--lemmy-navy); background: #fff; }
+.lemmy-closing .button--lemmy:hover { color: #fff; background: var(--lemmy-pink); }
+.lemmy-safety { padding: 11px 0; color: var(--lemmy-navy); background: #d9f1ff; }
+.lemmy-safety p { margin: 0; font-size: 9px; text-align: center; }
+.theme-lemmy .site-footer { color: #f7fbff; background: #18365f; }
+.theme-lemmy .footer-main { grid-template-columns: 1fr .9fr 1.05fr; gap: 24px; padding-block: 32px 26px; }
+.theme-lemmy .footer-brand__title { font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; font-size: 20px; font-weight: 800; }
+.theme-lemmy .footer-brand .footer-quote { margin-top: 10px; font-size: 14px; }
+.theme-lemmy .footer-links h2 { color: #8fd5ff; }
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .theme-lemmy .site-header--lemmy .header-row { width: calc(100% - 32px); min-height: 58px; gap: 8px; }
+  .theme-lemmy .lemmy-brand { width: 82px; min-width: 78px; }
+  .theme-lemmy .lemmy-brand__logo { width: 80px; height: 40px; }
+  .theme-lemmy .site-header--lemmy .site-nav { gap: 7px; }
+  .theme-lemmy .site-header--lemmy .site-nav { position: static; display: flex; flex-direction: row; align-items: center; justify-content: flex-end; }
+  .theme-lemmy .site-header--lemmy .nav-link { font-size: 9px; }
+  .theme-lemmy .site-header--lemmy .menu-toggle { display: none; }
+  .theme-lemmy .lemmy-header-bag { width: 32px; }
+  .lemmy-hero__grid { gap: 18px; }
+  .lemmy-product-grid, .lemmy-product-grid--stories { gap: 9px; }
+  .lemmy-product__body { padding: 11px; }
+  .lemmy-product-grid--featured .lemmy-product { grid-template-columns: minmax(0, 1.1fr) minmax(66px, .7fr); }
+  .lemmy-product-grid--stories .lemmy-product { grid-template-columns: minmax(65px, .75fr) minmax(0, 1.25fr); }
+  .lemmy-coming-card { grid-template-columns: minmax(54px, .65fr) minmax(0, 1.35fr); gap: 4px; padding: 9px; }
+  .lemmy-coming-card__cover { min-height: 90px; }
+  .lemmy-coming-card .lemmy-link { padding: 6px 8px; font-size: 7px; }
+  .lemmy-support__grid { gap: 10px; }
+  .lemmy-support__panel { padding: 15px; }
+  .lemmy-support__panel h2 { max-width: 65%; font-size: 21px; }
+  .lemmy-support__panel > p:not(.eyebrow), .lemmy-support__panel ul { max-width: 61%; }
+  .lemmy-support__panel li { font-size: 8px; }
+  .lemmy-support__art { right: 6px; bottom: 40px; width: 38%; }
+  .theme-lemmy .footer-main { grid-template-columns: 1fr 1fr; }
+  .theme-lemmy .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 760px) {
+  .theme-lemmy .site-header--lemmy .header-row { width: calc(100% - 36px); min-height: 58px; gap: 8px; }
+  .theme-lemmy .lemmy-brand { width: 88px; min-width: 80px; }
+  .theme-lemmy .lemmy-brand__logo { width: 84px; height: 40px; }
+  .theme-lemmy .site-header--lemmy .menu-toggle { display: block; order: 2; width: 38px; height: 38px; padding: 8px; border-color: rgba(22, 58, 117, .2); color: var(--lemmy-navy); }
+  .theme-lemmy .site-header--lemmy .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 7px 20px 15px;
+    border-bottom: 1px solid rgba(10, 142, 219, .17);
+    background: #fff;
+    box-shadow: 0 12px 20px rgba(22, 58, 117, .09);
+  }
+  .theme-lemmy .site-header--lemmy .site-nav.is-open { display: flex; }
+  .theme-lemmy .site-header--lemmy .nav-link { padding: 11px 2px; border-bottom: 1px solid rgba(10, 142, 219, .1); font-size: 12px; }
+  .theme-lemmy .site-header--lemmy .nav-link::after { display: none; }
+  .lemmy-header-bag { order: 3; margin-left: auto; }
+  .lemmy-hero__grid { grid-template-columns: 1fr; gap: 13px; padding-block: 20px 24px; }
+  .lemmy-hero__copy { max-width: 680px; }
+  .lemmy-hero h1 { font-size: clamp(48px, 12vw, 66px); }
+  .lemmy-hero__art { max-width: 640px; }
+  .lemmy-hero__art img { aspect-ratio: 1.45 / 1; border-radius: 20px; }
+  .lemmy-hero__art figcaption { text-align: center; }
+  .lemmy-intro__grid { grid-template-columns: 1fr; gap: 18px; }
+  .lemmy-intro h2 { max-width: 620px; }
+  .lemmy-products .section-heading { margin-bottom: 18px; }
+  .lemmy-subsection { margin-top: 16px; }
+  .lemmy-product-grid, .lemmy-product-grid--stories { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .lemmy-product-grid--featured .lemmy-product { grid-template-columns: minmax(0, 1fr) minmax(70px, .72fr); }
+  .lemmy-product-grid--stories .lemmy-product { grid-template-columns: minmax(68px, .75fr) minmax(0, 1.25fr); }
+  .lemmy-support__panel { padding: 18px; }
+  .lemmy-support__panel h2 { font-size: clamp(21px, 4vw, 28px); }
+  .lemmy-support__art { bottom: 42px; width: 39%; }
+  .lemmy-shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lemmy-shop-card:last-child { grid-column: 1 / -1; }
+  .lemmy-author__grid { grid-template-columns: minmax(135px, .45fr) minmax(0, 1fr); gap: 22px; }
+  .lemmy-author figure { width: min(100%, 180px); }
+  .lemmy-newsletter__inner { grid-template-columns: 70px minmax(0, 1fr); gap: 12px; }
+  .lemmy-newsletter__brand img { width: 66px; height: 48px; }
+  .lemmy-newsletter .button { grid-column: 1 / -1; justify-self: start; }
+  .lemmy-closing__inner { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .theme-lemmy .footer-main { grid-template-columns: 1fr; gap: 18px; padding-block: 26px 20px; }
+  .theme-lemmy .footer-brand { grid-column: auto; }
+  .theme-lemmy .footer-bottom { flex-direction: column; gap: 7px; }
+}
+
+@media (max-width: 680px) {
+  .lemmy-product-grid, .lemmy-product-grid--stories { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
+  .lemmy-product-grid--featured .lemmy-product { grid-template-columns: minmax(0, 1fr) minmax(84px, .45fr); }
+  .lemmy-product-grid--stories .lemmy-product { grid-template-columns: minmax(90px, .42fr) minmax(0, 1fr); }
+  .lemmy-coming-card { grid-template-columns: minmax(90px, .42fr) minmax(0, 1fr); }
   .lemmy-shop-grid { grid-template-columns: 1fr; }
   .lemmy-shop-card:last-child { grid-column: auto; }
-  .lemmy-author__grid { grid-template-columns: 1fr; gap: 30px; }
-  .lemmy-author figure { width: min(78%, 320px); }
-  .lemmy-closing__inner { align-items: flex-start; flex-direction: column; }
+  .lemmy-support__grid { grid-template-columns: 1fr; }
+  .lemmy-support__panel h2,
+  .lemmy-support__panel > p:not(.eyebrow),
+  .lemmy-support__panel ul { max-width: 60%; }
+  .lemmy-support__art { width: 38%; }
+  .lemmy-shop-card { padding: 17px 19px; }
+  .lemmy-shop-card p { margin-bottom: 8px; }
+}
+
+@media (max-width: 520px) {
+  .page-lemmy .container { width: calc(100% - 34px); }
+  .page-lemmy .section-pad { padding-block: 28px; }
+  .lemmy-hero__grid { padding-block: 17px 21px; }
+  .lemmy-hero .hero-actions { align-items: flex-start; gap: 9px; }
+  .lemmy-hero .hero-actions .button { min-height: 40px; }
+  .lemmy-subsection__heading { align-items: flex-start; }
+  .lemmy-support__panel h2,
+  .lemmy-support__panel > p:not(.eyebrow),
+  .lemmy-support__panel ul { max-width: 100%; }
+  .lemmy-support__panel { padding: 18px; }
+  .lemmy-support__art { position: relative; right: auto; bottom: auto; width: min(100%, 340px); margin: 12px auto 8px; }
+  .lemmy-author__grid { grid-template-columns: 1fr; gap: 17px; }
+  .lemmy-author figure { width: min(62%, 190px); justify-self: center; }
+  .lemmy-author h2 { font-size: 29px; }
+  .lemmy-author__grid > div { text-align: left; }
+  .lemmy-newsletter { padding-block: 16px; }
+  .lemmy-newsletter__inner { grid-template-columns: 54px minmax(0, 1fr); gap: 10px; }
+  .lemmy-newsletter__brand img { width: 52px; height: 42px; }
+  .lemmy-newsletter__copy h2 { font-size: 19px; }
+  .lemmy-newsletter .button { width: 100%; justify-self: stretch; }
 }
 
 @media (max-width: 420px) {
-  .lemmy-hero__art figcaption { text-align: left; }
+  .theme-lemmy .site-header--lemmy .header-row { width: calc(100% - 28px); }
+  .page-lemmy .container { width: calc(100% - 30px); }
+  .lemmy-hero h1 { font-size: clamp(46px, 12.4vw, 54px); }
+  .lemmy-hero .hero-actions { flex-direction: column; }
+  .lemmy-hero .hero-actions .button { width: 100%; }
   .lemmy-learnings ul { grid-template-columns: 1fr; }
-  .lemmy-product__cover { height: 290px; flex-basis: 290px; }
+  .lemmy-product-grid--featured .lemmy-product { grid-template-columns: minmax(0, 1fr) 92px; }
+  .lemmy-product-grid--stories .lemmy-product { grid-template-columns: 92px minmax(0, 1fr); }
+  .lemmy-coming-card { grid-template-columns: 86px minmax(0, 1fr); }
+  .lemmy-product__body { padding: 13px 12px; }
+  .lemmy-product__body h3 { font-size: 18px; }
+  .lemmy-product__body p { font-size: 10px; }
+  .lemmy-product__cover { padding: 7px; }
+  .lemmy-product__cover img { max-height: 150px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lemmy-product__cover img { transition: none; }
 }
 
 /* Phase 2 — child-friendly Lemmy Lou product detail pages */
@@ -953,181 +1365,4 @@ p { margin-bottom: 18px; }
   .page-product--lemmy .product-purchase .product-price { align-self: flex-start; }
   .page-product--lemmy .product-purchase .quantity-control { justify-content: space-between; }
   .page-product--lemmy .product-purchase .button { width: 100%; }
-}
-
-
-/* Approved Lemmy Lou & Friends mockup refinements */
-.theme-lemmy .site-header--lemmy { position: sticky; top: 0; background: rgba(255,255,255,.97); border-bottom: 1px solid rgba(10,142,219,.16); box-shadow: 0 2px 12px rgba(22,58,117,.04); }
-.theme-lemmy .site-header--lemmy .header-row { width: min(1360px, calc(100% - 48px)); min-height: 66px; gap: 14px; }
-.theme-lemmy .lemmy-brand { width: 112px; min-width: 98px; justify-content: flex-start; }
-.theme-lemmy .lemmy-brand__logo { width: 104px; height: 48px; object-fit: contain; }
-.theme-lemmy .site-header--lemmy .site-nav { justify-content: center; gap: clamp(8px, 1.15vw, 17px); }
-.theme-lemmy .site-header--lemmy .nav-link { color: #183d78; font-size: 11px; font-weight: 700; white-space: nowrap; }
-.theme-lemmy .site-header--lemmy .nav-link:hover, .theme-lemmy .site-header--lemmy .nav-link.is-active { color: #e72c8a; }
-.theme-lemmy .site-header--lemmy .nav-link::after { background: #e72c8a; }
-.lemmy-header-bag { display: inline-grid; place-items: center; width: 40px; height: 40px; flex: 0 0 auto; color: var(--lemmy-navy); }
-.lemmy-header-bag svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
-.lemmy-header-bag:hover { color: var(--lemmy-pink); }
-.page-lemmy .section-pad { padding-block: clamp(44px, 6vw, 76px); }
-.page-lemmy h1, .page-lemmy h2, .page-lemmy h3 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-weight:800; letter-spacing:-.035em; }
-.lemmy-hero { position: relative; background: linear-gradient(110deg, #f1fbff 0%, #fff 54%, #fff4f8 100%); }
-.lemmy-hero::before { position:absolute; top:0; right:0; width:42%; height:100%; background:radial-gradient(ellipse at 70% 30%, rgba(255,221,77,.19), transparent 56%); content:""; pointer-events:none; }
-.lemmy-hero__grid { grid-template-columns: .88fr 1.12fr; gap:clamp(25px,4.2vw,60px); min-height:510px; padding-block:44px 55px; }
-.lemmy-hero__copy { max-width:560px; }
-.lemmy-hero h1 { font-size:clamp(56px,6.2vw,84px); line-height:.98; }
-.lemmy-hero .eyebrow { letter-spacing:.08em; font-size:11px; }
-.lemmy-hero__art img { aspect-ratio:1.27 / 1; object-fit:cover; object-position:center 42%; border:5px solid #fff; border-radius:34px; box-shadow:0 14px 35px rgba(22,58,117,.13); }
-.lemmy-hero__art figcaption { color:#173a75; font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:none; }
-.page-lemmy .button--lemmy { border:0; background:#e82d8b; box-shadow:0 5px 0 rgba(183,23,102,.13); }
-.page-lemmy .button--lemmy:hover { background:#c91f73; }
-.page-lemmy .lemmy-link { color:#e22c83; }
-.lemmy-intro { position:relative; background:linear-gradient(110deg,#e4f6ff,#f8f4ff 60%,#fff2f7); }
-.lemmy-intro__grid { align-items:center; }
-.lemmy-intro h2, .lemmy-learnings h3, .lemmy-subsection__heading h3 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-weight:800; letter-spacing:-.035em; }
-.lemmy-learnings { border:0; border-radius:30px 46px 30px 42px; background:rgba(255,255,255,.88); box-shadow:0 10px 26px rgba(22,58,117,.07); }
-.lemmy-learnings ul { list-style:none; padding:0; }
-.lemmy-learnings li { position:relative; padding-left:18px; }
-.lemmy-learnings li::before { position:absolute; top:.42em; left:0; color:#ed4a9a; content:'♥'; font-size:11px; }
-.lemmy-products { background:#fff; }
-.lemmy-subsection { margin-top:35px; }
-.lemmy-subsection__heading { align-items:center; margin-bottom:18px; }
-.lemmy-section-mark { background:#e72c8a; }
-.lemmy-product-grid { gap:16px; }
-.lemmy-product-grid--stories { grid-template-columns:repeat(3,minmax(0,1fr)); max-width:none; }
-.lemmy-product { border:1px solid rgba(22,58,117,.08); border-radius:16px; box-shadow:0 6px 18px rgba(22,58,117,.07); }
-.lemmy-product__cover { height:230px; flex:0 0 230px; padding:12px; border-radius:0; }
-.lemmy-product__cover img { width:auto; height:100%; max-width:100%; max-height:100%; object-fit:contain; }
-.lemmy-product__body { padding:17px 18px 20px; }
-.lemmy-product__body h3 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-size:21px; font-weight:800; }
-.lemmy-product__body p { font-size:11px; }
-.lemmy-coming-card { display:grid; grid-template-columns:minmax(0,.75fr) minmax(0,1fr); align-items:center; gap:8px; min-width:0; overflow:hidden; padding:16px; border:1px solid rgba(22,58,117,.08); border-radius:16px; background:#fff9d8; box-shadow:0 6px 18px rgba(22,58,117,.06); }
-.lemmy-coming-card__cover { display:grid; place-items:center; min-width:0; height:190px; padding:6px; }
-.lemmy-coming-card__cover img { width:auto; height:100%; max-width:100%; object-fit:contain; }
-.lemmy-coming-card .eyebrow { margin-bottom:7px; color:#d08b00; font-size:9px; }
-.lemmy-coming-card h3 { margin-bottom:8px; color:var(--lemmy-navy); font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-size:20px; font-weight:800; }
-.lemmy-coming-card p { color:#405780; font-size:11px; line-height:1.45; }
-.lemmy-coming-card .lemmy-link { font-size:9px; }
-.lemmy-support { background:linear-gradient(115deg,#fff0f5,#eef8ff); }
-.lemmy-support__grid { align-items:stretch; gap:16px; }
-.lemmy-support__panel { display:flex; flex-direction:column; min-height:0; padding:24px; border:0; border-radius:17px; box-shadow:0 5px 16px rgba(22,58,117,.06); }
-.lemmy-support__panel--pros { background:#f3edff; }
-.lemmy-support__panel h2 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-size:clamp(25px,2.7vw,32px); font-weight:800; }
-.lemmy-support__panel p, .lemmy-support__panel li { font-size:11px; }
-.lemmy-support__panel ul { margin-bottom:14px; }
-.lemmy-support__art { width:100%; height:150px; margin-top:auto; margin-bottom:12px; overflow:hidden; border-radius:14px; background:#fff; }
-.lemmy-support__art img { width:100%; height:100%; object-fit:contain; object-position:center; }
-.lemmy-support__panel--parents .lemmy-support__art img { object-position:center; }
-.lemmy-support__panel--pros .lemmy-support__art img { object-position:center; }
-.lemmy-shop { background:#fffdf2; }
-.lemmy-shop-grid { gap:15px; }
-.lemmy-shop-card { min-height:220px; padding:22px; border:1px solid rgba(22,58,117,.05); border-radius:18px; }
-.lemmy-shop-card--books { background:#ffeaf2; }
-.lemmy-shop-card--printables { background:#e4f5ff; }
-.lemmy-shop-card--gifts { background:#e9f8e7; }
-.lemmy-shop-icon { margin-bottom:12px; font-size:36px; }
-.lemmy-shop-card .eyebrow { font-size:9px; }
-.lemmy-shop-card h3 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-size:22px; font-weight:800; }
-.lemmy-shop-card p { min-height:0; font-size:11px; }
-.lemmy-author { background:#e7f6ff; }
-.lemmy-author__grid { grid-template-columns:minmax(180px,.48fr) minmax(0,1.35fr); gap:42px; max-width:1050px; }
-.lemmy-author figure { width:min(100%,255px); }
-.lemmy-author figure img { aspect-ratio:1; max-height:none; border:5px solid #fff; border-radius:50%; object-position:center 25%; }
-.lemmy-author h2 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-weight:800; }
-.lemmy-newsletter { padding:24px 0; background:linear-gradient(95deg,#fff0f5,#fff,#e9f7ff); }
-.lemmy-newsletter__inner { display:grid; grid-template-columns:120px 1fr auto; gap:24px; align-items:center; }
-.lemmy-newsletter__brand { display:grid; place-items:center; }
-.lemmy-newsletter__brand img { width:110px; height:76px; object-fit:contain; }
-.lemmy-newsletter__copy .eyebrow { margin-bottom:5px; color:#e72c8a; }
-.lemmy-newsletter__copy h2 { margin-bottom:5px; font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-size:clamp(22px,2.5vw,30px); font-weight:800; }
-.lemmy-newsletter__copy p { margin:0; color:#405780; font-size:12px; }
-.lemmy-newsletter .button { white-space:nowrap; }
-.lemmy-closing { background:linear-gradient(95deg,#168eda,#067ac5); }
-.lemmy-closing__inner { padding-block:29px; }
-.lemmy-closing h2 { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-weight:800; }
-.lemmy-safety { background:#e0f4ff; }
-.theme-lemmy .site-footer { background:#25302e; }
-.theme-lemmy .footer-main { grid-template-columns:1fr .9fr 1.05fr; gap:28px; padding-block:38px 30px; }
-.theme-lemmy .footer-brand__title { font-family:'Trebuchet MS','Segoe UI',system-ui,sans-serif; font-size:21px; font-weight:800; }
-.theme-lemmy .footer-brand .footer-quote { margin-top:13px; font-size:15px; }
-.theme-lemmy .footer-links h2 { color:#8fd5ff; }
-@media (max-width: 1120px) {
-  .theme-lemmy .site-header--lemmy .header-row { width:calc(100% - 36px); gap:10px; }
-  .theme-lemmy .lemmy-brand { width:90px; min-width:86px; }
-  .theme-lemmy .lemmy-brand__logo { width:88px; }
-  .theme-lemmy .site-header--lemmy .site-nav { gap:8px; }
-  .theme-lemmy .site-header--lemmy .nav-link { font-size:10px; }
-}
-@media (max-width: 900px) {
-  .theme-lemmy .site-header--lemmy .header-row { min-height:64px; }
-  .theme-lemmy .site-header--lemmy .site-nav { align-items:stretch; justify-content:flex-start; gap:0; padding:8px 24px 18px; background:#fff; }
-  .theme-lemmy .site-header--lemmy .nav-link { padding:12px 2px; border-bottom:1px solid rgba(216,208,198,.55); font-size:13px; }
-  .theme-lemmy .lemmy-header-bag { order:2; margin-left:auto; }
-  .theme-lemmy .site-header--lemmy .menu-toggle { order:3; }
-  .lemmy-hero__grid { grid-template-columns:1fr 1fr; gap:20px; min-height:0; padding-block:42px; }
-  .lemmy-hero h1 { font-size:clamp(48px,7.2vw,68px); }
-  .lemmy-hero__art img { aspect-ratio:1 / 1; }
-  .lemmy-product-grid--stories { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .lemmy-coming-card { grid-column:1 / -1; grid-template-columns:150px 1fr; }
-  .lemmy-coming-card__cover { height:155px; }
-  .lemmy-author__grid { grid-template-columns:220px 1fr; gap:28px; }
-  .theme-lemmy .footer-main { grid-template-columns:1fr 1fr; }
-}
-@media (max-width: 700px) {
-  .theme-lemmy .site-header--lemmy .header-row { width:calc(100% - 32px); min-height:59px; }
-  .theme-lemmy .lemmy-brand { width:92px; min-width:84px; }
-  .theme-lemmy .lemmy-brand__logo { width:86px; height:42px; }
-  .lemmy-hero__grid { grid-template-columns:1fr; gap:17px; padding-block:26px 32px; }
-  .lemmy-hero__copy { max-width:none; }
-  .lemmy-hero h1 { font-size:clamp(50px,13vw,66px); }
-  .lemmy-hero__art { max-width:none; margin:0; }
-  .lemmy-hero__art img { aspect-ratio:1.35 / 1; border-width:3px; border-radius:22px; }
-  .lemmy-hero__art figcaption { text-align:center; }
-  .lemmy-hero .hero-actions { align-items:flex-start; gap:11px; }
-  .lemmy-hero .hero-actions .button { width:auto; }
-  .lemmy-intro__grid { grid-template-columns:1fr; gap:20px; }
-  .lemmy-learnings { padding:21px; }
-  .lemmy-learnings ul { grid-template-columns:1fr 1fr; }
-  .lemmy-products .section-heading { margin-bottom:25px; }
-  .lemmy-subsection { margin-top:28px; }
-  .lemmy-subsection__heading { gap:11px; }
-  .lemmy-product-grid--featured, .lemmy-product-grid--stories { grid-template-columns:1fr; max-width:500px; margin-inline:auto; }
-  .lemmy-product-grid { gap:14px; }
-  .lemmy-product { display:grid; grid-template-columns:116px minmax(0,1fr); align-items:stretch; }
-  .lemmy-product__cover { height:auto; min-height:185px; flex:initial; padding:8px; }
-  .lemmy-product__cover img { width:100%; height:auto; max-height:200px; }
-  .lemmy-product__body { padding:14px 13px; }
-  .lemmy-product__kind { font-size:8px; }
-  .lemmy-product__body h3 { font-size:18px; }
-  .lemmy-product__body p { font-size:10px; }
-  .lemmy-coming-card { grid-column:auto; grid-template-columns:110px minmax(0,1fr); padding:12px; }
-  .lemmy-coming-card__cover { height:140px; }
-  .lemmy-coming-card h3 { font-size:18px; }
-  .lemmy-support__grid { grid-template-columns:1fr; }
-  .lemmy-support__panel { padding:21px; }
-  .lemmy-support__art { height:150px; }
-  .lemmy-shop-grid { grid-template-columns:1fr; }
-  .lemmy-shop-card { min-height:0; padding:21px; }
-  .lemmy-author__grid { grid-template-columns:1fr; gap:23px; }
-  .lemmy-author figure { width:min(62%,220px); justify-self:center; }
-  .lemmy-newsletter { padding:24px 0; }
-  .lemmy-newsletter__inner { grid-template-columns:66px 1fr; gap:14px; }
-  .lemmy-newsletter__brand img { width:65px; height:65px; }
-  .lemmy-newsletter__copy h2 { font-size:21px; }
-  .lemmy-newsletter__copy p { font-size:11px; }
-  .lemmy-newsletter .button { grid-column:1 / -1; width:100%; }
-  .lemmy-closing__inner { padding-block:25px; }
-  .theme-lemmy .footer-main { grid-template-columns:1fr; gap:21px; }
-  .theme-lemmy .footer-brand { grid-column:auto; }
-}
-@media (max-width: 420px) {
-  .lemmy-hero .hero-actions { flex-direction:column; }
-  .lemmy-hero .hero-actions .button { width:100%; }
-  .lemmy-learnings ul { grid-template-columns:1fr; }
-  .lemmy-product { grid-template-columns:100px minmax(0,1fr); }
-  .lemmy-product__cover { min-height:165px; }
-  .lemmy-product__body { padding:12px 10px; }
-  .lemmy-product__body h3 { font-size:16px; }
-  .lemmy-product__body p { font-size:9px; }
-  .lemmy-coming-card { grid-template-columns:90px minmax(0,1fr); }
-  .lemmy-coming-card__cover { height:125px; }
 }
